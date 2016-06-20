@@ -12,3 +12,14 @@ var tabArea = function(){
         $('.oList1 li').removeClass('active').eq(theNum).addClass('active');
     })
 };
+
+var btnCount = function(){
+    var btnCnt = $('.btnArea:not(:hidden) button').length;
+
+    if( btnCnt === 2 ){
+        $('.btnArea button').css('width','49%');
+
+    }if( btnCnt === 3 ){
+        $('.btnArea button').css('width','32%');
+    }
+};
