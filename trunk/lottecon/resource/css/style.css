@@ -104,6 +104,9 @@ h1.signup img { width: 163px; height: 48px;}
 .termsArea h1 { color: #333; font-size: 15px;}
 .termsArea .p1 { overflow-y: scroll; margin-top: 10px; padding: 10px 14px; height: 130px; border: 1px solid #d6d6d6; background: #f9f9f9; white-space: pre-line;}
 .termsArea .p2 { margin: 15px -15px 0; padding: 15px; border-top: 1px solid #e5e5e5; color: #777; text-align: center;}
+@media screen and ( max-device-width: 320px ) {
+    .termsArea .p2 { letter-spacing: -1.5px;}
+}
 
 /* 잠재위험 목록 */
 .searchWrap ul { width: 100%;}
