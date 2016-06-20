@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>잠재위험등록</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content">
+        <form action="">
+            <h2>조치전 사진</h2>
+            <ul class="photoArea">
+                <li><a href="#" class="reg1"><span>카메라</span></a></li>
+                <li><a href="#" class="reg2"><span>사진</span></a></li>
+            </ul>
+
+            <h2>기본정보</h2>
+            <table class="tbl_type1">
+                <colgroup class="cgp1">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">일 시</th>
+                    <td><input type="time" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">장 소</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">발 굴 자</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row" style="line-height: 2.6;">부 적 합 내 용</th>
+                    <td>
+                        <textarea class="textarea0"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">조 치 지 시</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">조 치 기 한</th>
+                    <td><input type="text" readonly="readonly" class="datepicker"></td>
+                </tr>
+                <tr>
+                    <th scope="row">위 험 도</th>
+                    <td class="rArea2">
+                        <input type="radio" name="myArea" id="a1" checked="checked">
+                        <label for="a1"></label><span class="label">상</span>
+                        <input type="radio" name="myArea" id="a2">
+                        <label for="a2"></label><span class="label">중</span>
+                        <input type="radio" name="myArea" id="a3">
+                        <label for="a3"></label><span class="label">하</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">조 치 당 담 자</th>
+                    <td class="posr">
+                        <input type="text" name="" id="">
+                        <a href="#" class="srch"></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>조치후 사진</h2>
+            <ul class="photoArea">
+                <li><img src="../resource/images/img_dummy.png" alt="카메라"></li>
+                <li><img src="../resource/images/img_dummy.png" alt="사진"></li>
+            </ul>
+
+            <h2>조치내용</h2>
+            <textarea class="textarea1"></textarea>
+
+            <button type="submit" class="button btnRed">등록</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+</body>
+</html>
