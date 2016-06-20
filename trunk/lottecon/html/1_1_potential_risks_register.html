@@ -30,6 +30,10 @@
                 buttonImage: "../resource/images/ico_cal.png",
                 buttonImageOnly: true
             });
+
+
+
+
         });
     </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
 </head>
@@ -118,10 +122,24 @@
 
             <h2>조치내용</h2>
             <textarea class="textarea1"></textarea>
+<!--
+            <div class="btnArea">
+                <button type="submit" class="button btnRed2">등록</button>
+            </div>
+-->
+<!--
+            <div class="btnArea">
+                <button type="submit" class="button btnRed">수정</button>
+                <button type="button" class="button btnGray2">삭제</button>
+            </div>
+-->
 
             <div class="btnArea">
-                <button type="submit" class="button btnRed">등록</button>
+                <button type="submit" class="button btnRed">수정</button>
+                <button type="button" class="button btnGray">삭제</button>
+                <button type="button" class="button btnAqua">조치완료</button>
             </div>
+
         </form>
     </section>
 
@@ -137,6 +155,7 @@
 
 <script>
     label();
+    btnCount();
 </script>
 
 </body>
