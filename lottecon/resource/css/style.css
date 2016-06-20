@@ -21,7 +21,7 @@
 .loginWrap h1 img { width: 163px; height: 48px;}
 
 .inputArea { padding: 0 14px;}
-.inputArea input { height: 48px; border: 1px solid #dcdcdc;}
+.inputArea input { height: 48px !important; border: 1px solid #dcdcdc;}
 .inputArea input[type='text'] { margin: 24px 0 10px; width: 100%; background: #fff url(../images/login_ico_1.png) no-repeat 14px 16px; background-size: 26px auto; text-indent: 56px;}
 .inputArea input[type='password'] { width: 100%; background: #fff url(../images/login_ico_2.png) no-repeat 14px 16px; background-size: 26px auto; text-indent: 56px;}
 .rArea { margin-top: 12px; text-align: center;}
