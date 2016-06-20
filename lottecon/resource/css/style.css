@@ -123,6 +123,10 @@ label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spaci
 .rArea1 span { margin-right: 3px;}
 .rArea2 span { margin-right: 5px;}
 
+@media screen and ( max-device-width: 320px ) {
+    .rArea2 span { margin-right: 0;}
+}
+
 .cArea1 { padding-top: 12px !important;}
 input[type="checkbox"]{ display:none; }
 input[type="checkbox"] + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_check1.png) no-repeat 0 -27px; background-size: 27px auto; vertical-align: -30%; }
