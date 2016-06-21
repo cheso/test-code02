@@ -115,6 +115,12 @@ h1.signup img { width: 163px; height: 48px;}
 .sideList li { height: 50px; border: solid #e5e5e5; border-width: 0 1px 1px 1px; line-height: 50px;}
 .sideList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-indent: 14px;}
 
+/* 자료실 */
+.pdsList { width: 100%; border: solid #dcdcdc; border-width: 1px 0 0 1px;}
+.pdsList:after { display: block; clear: both; content: '';}
+.pdsList li { float: left; box-sizing: border-box; width: 33.3%; width: calc(100%/3); height: 155px; border: solid #dcdcdc; border-width: 0 1px 1px 0; background: #fff; line-height: 155px;}
+.pdsList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-align: center;}
+
 /* 잠재위험 목록 */
 .searchWrap:after { display: block; clear: both; content: '';}
 .searchWrap ul { width: 100%;}
