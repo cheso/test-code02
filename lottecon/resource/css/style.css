@@ -165,7 +165,7 @@ h1.signup img { width: 163px; height: 48px;}
 .buoiList dt { padding: 13px 15px; border-top: 1px solid #dcdcdc; background: url(../images/ico_arr1.png) no-repeat right 18px top 20px; background-size: 15px auto;}
 .buoiList dt.on { background: url(../images/ico_arr3.png) no-repeat right 18px top 20px; background-size: 15px auto;}
 .buoiList dt a { display: inline-block; width: 100%; height: 100%; color: #333;}
-.buoiList dd { padding: 11px 15px; border-top: 1px solid #dcdcdc; color: #707070; font-size: 14px;}
+.buoiList dd { display: none; padding: 11px 15px; border-top: 1px solid #dcdcdc; color: #707070; font-size: 14px;}
 .buoiList dd li:after { display: block; clear: both; content: '';}
 .buoiList dd li span:nth-child(1) { float: left;}
 .buoiList dd li span:nth-child(2) { float: right;}
