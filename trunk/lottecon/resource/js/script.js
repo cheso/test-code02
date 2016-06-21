@@ -23,3 +23,14 @@ var btnCount = function(){
         $('.btnArea button').css('width','32%');
     }
 };
+
+
+var toggleList = function() {
+    $(document).on('click','.buoiList dt a', function(){
+        $('.buoiList').find('dt').removeClass('on');
+        $('.buoiList').find('dd:not(:hidden)').hide();
+
+        $(this).parent().addClass('on');
+        $(this).parent().next().show();
+    })
+};
