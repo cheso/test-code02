@@ -86,7 +86,7 @@ input[type='text'], input[type='password'], input[type='time'] { width: 100%; he
 
 /* 회원가입 */
 .sosok td { padding: 8px 10px 8px 8px;}
-.tdBtn1 { position: absolute; top: 9px; right: 9px; width: 66px; height: 36px; border-left: 1px solid #e5e5e5; color: #333; text-align: center; line-height: 36px;}
+.tdBtn1 { position: absolute; top: 9px; right: 9px; width: 66px; height: 36px; border-left: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; line-height: 36px;}
 .font_red { color: #fa2828;}
 .datePeriod input { width: 44.5%; text-align: center; text-indent: 0;}
 .datePeriod span { display: inline-block; width: 4.5%;}
@@ -159,6 +159,16 @@ h1.signup img { width: 163px; height: 48px;}
 .inputComment li:nth-child(2) { float: right; width: 26%;}
 .inputComment input { width: 100%; height: 50px;}
 .inputComment .sideBtn { width: 100%; height: 52px; background: #fa2828; color: #fff; font-size: 16px;}
+
+/* 부외자산 조회 */
+.buoiList { margin-top: 20px; width: 100%; border: solid #dcdcdc; border-width: 0 1px 1px 1px; background: #fff;}
+.buoiList dt { padding: 13px 15px; border-top: 1px solid #dcdcdc; background: url(../images/ico_arr1.png) no-repeat right 18px top 20px; background-size: 15px auto;}
+.buoiList dt.on { background: url(../images/ico_arr3.png) no-repeat right 18px top 20px; background-size: 15px auto;}
+.buoiList dt a { display: inline-block; width: 100%; height: 100%; color: #333;}
+.buoiList dd { padding: 11px 15px; border-top: 1px solid #dcdcdc; color: #707070; font-size: 14px;}
+.buoiList dd li:after { display: block; clear: both; content: '';}
+.buoiList dd li span:nth-child(1) { float: left;}
+.buoiList dd li span:nth-child(2) { float: right;}
 
 /* 잠재위험 목록 */
 .searchWrap:after { display: block; clear: both; content: '';}
