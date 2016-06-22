@@ -198,6 +198,7 @@ label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spaci
 .rArea2 input[type="radio"] + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_radio1.png) no-repeat 0 -20px; background-size: 20px auto; vertical-align: -30%; }
 .rArea2 input[type="radio"]:checked + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_radio1.png) no-repeat 0 0; background-size: 20px auto; }
 
+/*
 @media screen and ( max-device-width: 320px ) {
     .rArea2 span { margin-right: 0;}
 }
@@ -205,6 +206,7 @@ label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spaci
 @media screen and ( max-device-width: 413px ) {
     .rArea2 { padding: 6px 50px 6px 8px !important;}
 }
+*/
 
 .cArea1 { padding-top: 12px !important;}
 input[type="checkbox"]{ display:none; }
