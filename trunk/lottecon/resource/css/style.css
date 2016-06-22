@@ -133,11 +133,11 @@ h1.signup img { width: 163px; height: 48px;}
 .pdsList2 li a em { display: inline-block; overflow: hidden; width: 85%; color: #333; text-indent: 54px; text-overflow: ellipsis; white-space: nowrap; font-size: 15px;}
 .pdsList2 li a span { display: block; margin-top: -4px; color: #707070; text-indent: 54px; font-size: 12px;}
 
-.pdsDetail dt { padding: 0 10px 2px; height: 48px; border: solid #dcdcdc; border-width: 1px 1px 0 1px; background: #fff; line-height: 48px;}
-.pdsDetail dt .sWrap { display: block; height: 100%; border-bottom: 1px solid #dcdcdc;}
-.pdsDetail dt .sWrap:after { display: block; clear: both; content: '';}
-.pdsDetail dt .sWrap span { float: left; overflow: hidden ;width: 70%; color: #333; text-overflow: ellipsis; white-space: nowrap; font-size: 15px;}
-.pdsDetail dt .sWrap em { float: right; color: #707070; font-size: 14px;}
+.pdsDetail .dt { padding: 0 10px 2px; height: 48px; border: solid #dcdcdc; border-width: 1px 1px 0 1px; background: #fff; line-height: 48px;}
+.pdsDetail .dt .sWrap { display: block; height: 100%; border-bottom: 1px solid #dcdcdc;}
+.pdsDetail .dt .sWrap:after { display: block; clear: both; content: '';}
+.pdsDetail .dt .sWrap span { float: left; overflow: hidden ;width: 70%; color: #333; text-overflow: ellipsis; white-space: nowrap; font-size: 15px;}
+.pdsDetail .dt .sWrap em { float: right; color: #707070; font-size: 14px;}
 .pdsDetail .dd1 { overflow: scroll; padding: 10px; height: 224px; border: solid #dcdcdc; border-width: 0 1px 1px 1px; background: #fff; color: #707070; font-size: 14px;}
 .pdsDetail .dd2 { margin-top: 10px; padding: 0 10px; height: 48px; border: 1px solid #dcdcdc; background: #fff; color: #999; line-height: 48px;}
 .pdsDetail .dd2 a { float: left; overflow: hidden; width: 80%; height: 100%; background: url(../images/ico_disk.png) no-repeat 0 14px; background-size: 21px auto; color: #999; text-indent: 26px; text-overflow: ellipsis; white-space: nowrap;}
