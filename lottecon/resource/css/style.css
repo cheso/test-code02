@@ -46,8 +46,9 @@ header h1 { height: 100%; color: #fff; text-align: center; font-weight: normal; 
 h2 { margin: 20px 0 10px; color: #333; font-size: 15px;}
 h2:first-child { margin-top: -5px;}
 .tbl_type1 { width: 100%; border: 1px solid #e5e5e5;}
-.tbl_type1 th { padding: 0 9px 0 9px; height: 54px; border-bottom: 1px solid #d6d6d6; background: #eee; color: #333; vertical-align: bottom; text-align: center; font-weight: normal; line-height: 1.15;}
-.tbl_type1 th:after { display:inline-block; width:100%; content:"";}
+.tbl_type1 th { padding: 16px 0; border-bottom: 1px solid #d6d6d6; background: #eee; font-weight: normal;}
+/*.tbl_type1 th { padding: 0 9px 0 9px; height: 54px; border-bottom: 1px solid #d6d6d6; background: #eee; color: #333; vertical-align: bottom; text-align: center; font-weight: normal; line-height: 1.15;}*/
+/*.tbl_type1 th:after { display:inline-block; width:100%; content:"";}*/
 .tbl_type1 td { padding: 0 10px 0 8px; border-bottom: 1px solid #d6d6d6; background: #fff; color: #333;}
 input[type='text'], input[type='password'], input[type='time'] { width: 100%; height: 36px; border: 1px solid #e5e5e5; background: #fff; color: #999; text-indent: 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .tbl_type2 { width: 100%; border: 1px solid #dcdcdc;}
@@ -92,7 +93,7 @@ input[type='text'], input[type='password'], input[type='time'] { width: 100%; he
 .datePeriod span { display: inline-block; width: 4.5%;}
 
 @media screen and ( max-device-width: 320px ) {
-    .tbl_type1 th { padding: 0 3px;}
+    /*.tbl_type1 th { padding: 0 3px;}*/
     .datePeriod input { width: 43%;}
     .datePeriod span { width: 4%;}
 }
@@ -119,7 +120,7 @@ h1.signup img { width: 163px; height: 48px;}
 /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 1px 0 0 1px;}
 .pdsList:after { display: block; clear: both; content: '';}
-.pdsList li { float: left; box-sizing: border-box; width: 33.3%; width: calc(100%/3); height: 155px; border: solid #dcdcdc; border-width: 0 1px 1px 0; background: #fff; line-height: 155px;}
+.pdsList li { float: left; box-sizing: border-box; width: 33.3%; width: calc(100%/3); height: 155px; border: solid #dcdcdc; border-width: 0 1px 1px 0; background: #fff;}
 .pdsList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-align: center;}
 
 .pdsList2 { margin-top: 10px; padding: 0 10px; border: 1px solid #e5e5e5; background: #fff;}
@@ -186,13 +187,20 @@ h1.signup img { width: 163px; height: 48px;}
 input[type="radio"]{ display:none; }
 input[type="radio"] + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_radio1.png) no-repeat 0 -27px; background-size: 27px auto; vertical-align: -30%; }
 input[type="radio"]:checked + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_radio1.png) no-repeat 0 0; background-size: 27px auto; }
-label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spacing: -1px; font-size: 15px;}
+label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spacing: -1px; font-size: 13px;}
 .searchWrap input[type='submit'] { width: 100%; height: 50px; border: 0; background: #fa2828; color: #fff;}
-.rArea1 span { margin-right: 3px;}
-.rArea2 span { margin-right: 5px;}
+.rArea1 span { margin-right: 3px !important;}
+.rArea2 span { margin: 0 3px 0 0 !important;}
+
+.rArea2 input[type="radio"] + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_radio1.png) no-repeat 0 -20px; background-size: 20px auto; vertical-align: -30%; }
+.rArea2 input[type="radio"]:checked + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_radio1.png) no-repeat 0 0; background-size: 20px auto; }
 
 @media screen and ( max-device-width: 320px ) {
     .rArea2 span { margin-right: 0;}
+}
+
+@media screen and ( max-device-width: 413px ) {
+    .rArea2 { padding: 6px 50px 6px 8px !important;}
 }
 
 .cArea1 { padding-top: 12px !important;}
