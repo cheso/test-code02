@@ -16,6 +16,31 @@
 .w100p { width: 100% !important;}
 .color1 { color: #fca727;}
 
+/* MAIN */
+#main { background: #fff;}
+#main  { padding: 0 6%;}
+#main .wrapper > h1 { padding-top: 20%; text-align: center;}
+#main .wrapper > h1 img { width: 49%;}
+
+.facePhoto { margin: 3% auto 5%; width: 75px; height: 75px;}
+.facePhoto img { width: 100%; height: 100%; border-radius: 50%;}
+
+.personInfo { text-align: center;}
+.personInfo em { color: #333; font-size: 21px;}
+.personInfo span { display: block; margin-top: 3px; color: #888; font-size: 13px;}
+
+.mainMenu { margin-top: 9%;}
+.mainMenu:after { display: block; clear: both; content: '';}
+.mainMenu li { margin-bottom: 12px; width: 48%; height: 128px; border-radius: 6px; text-align: center;}
+.mainMenu li:nth-child(1) { float: left; background: #8c2332 url(../images/main_ico1.png) no-repeat 50% 22px; background-size: 53px auto;}
+.mainMenu li:nth-child(2) { float: right; background: #8d6f4c url(../images/main_ico2.png) no-repeat 50% 22px; background-size: 53px auto;}
+.mainMenu li:nth-child(3) { float: left; background: #e1c5ac url(../images/main_ico3.png) no-repeat 50% 22px; background-size: 53px auto;}
+.mainMenu li:nth-child(4) { float: right; background: #72b1c8 url(../images/main_ico4.png) no-repeat 50% 22px; background-size: 53px auto;}
+.mainMenu li a { display: inline-block; box-sizing: border-box; padding-top: 88px; width: 100%; height: 100%; color: #fff; font-size: 17px;}
+
+@media screen and ( min-device-width: 320px ) {
+}
+
 /* LOGIN */
 .loginWrap h1 { margin-top: 48px; text-align: center;}
 .loginWrap h1 img { width: 163px; height: 48px;}
