@@ -11,6 +11,37 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+    <script>
+        $(function() {
+            $( ".datepicker" ).datepicker({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+                changeMonth: true,
+                changeYear: true,
+                yearSuffix: '년',
+                showOn: "button",
+                buttonImage: "../resource/images/ico_cal.png",
+                buttonImageOnly: true
+            });
+        });
+    </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
+    <style>
+        caption { display: none;}
+        #ui-datepicker-div {
+            position: absolute;
+            top: 177px;
+            left: 20px;
+            z-index: 1;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,46 +50,60 @@
 
     <header>
         <a href="#" class="h_back">이전</a>
-        <h1>부외자산조회</h1>
+        <h1>잠재위험</h1>
         <a href="#" class="h_menu">메뉴</a>
     </header>
 
     <section class="content">
-        <div class="searchWrap sideArea">
-            <input type="text" name="" id="" placeholder="자재명을 입력하세요.">
-            <button type="button" class="sideBtn">검색</button>
+        <form action="">
+            <div class="searchWrap">
+                <ul>
+                    <li class="w100p"><input type="text" name="" placeholder="현장명입력"></li>
+                    <li class="f_l"><input type="text" name="" readonly="readonly" class="datepicker"></li>
+                    <li class="f_r"><input type="text" name="" readonly="readonly" class="datepicker"></li>
+                    <li class="f_l">
+                        <select name="">
+                            <option value="">발굴</option>
+                            <option value="">검토</option>
+                            <option value="">조치</option>
+                        </select>
+                    </li>
+                    <li class="f_r cArea1">
+                        <input type="checkbox" name="myArea" id="a1">
+                        <label for="a1"></label> <span class="label">내 조치</span>
+                    </li>
+                </ul>
+                <div class="btnArea mt0">
+                    <button type="submit" class="button btnColorA">검색</button>
+                </div>
+            </div>
+        </form>
+        <div class="searchResult">
+            <section>
+                <dl>
+                    <dt>이효성 (주)동아지질</dt>
+                    <dd>발급일자 2016-02-02</dd>
+                    <dd>조치기한 2016-02-02</dd>
+                    <dd>10층</dd>
+                </dl>
+                <div class="imgArea">
+                    <div><img src="../resource/images/img_dummy.png" alt=""></div>
+                    <span class="ok">조치완료</span>
+                </div>
+            </section>
+            <section>
+                <dl>
+                    <dt>문경익 (주)대저건설</dt>
+                    <dd>발급일자 2016-02-02</dd>
+                    <dd>조치기한 2016-02-02</dd>
+                    <dd>937정거장</dd>
+                </dl>
+                <div class="imgArea">
+                    <div><img src="../resource/images/img_dummy.png" alt=""></div>
+                    <span>검토중</span>
+                </div>
+            </section>
         </div>
-        <dl class="buoiList">
-            <dt><a href="#">자재명1</a></dt>
-            <dd>
-                <ul>
-                    <li><span>규격</span><span>12345</span></li>
-                    <li><span>수량</span><span>1234</span></li>
-                    <li><span>창고</span><span>백암참고</span></li>
-                </ul>
-            </dd>
-            <dt><a href="#">자재명2</a></dt>
-            <dd>
-                <ul>
-                    <li><span>규격</span><span>12345</span></li>
-                    <li><span>수량</span><span>1234</span></li>
-                    <li><span>창고</span><span>백암참고</span></li>
-                </ul>
-            </dd>
-            <dt><a href="#">자재명3</a></dt>
-            <dd>
-                <ul>
-                    <li><span>규격</span><span>12345</span></li>
-                    <li><span>수량</span><span>1234</span></li>
-                    <li><span>창고</span><span>백암참고</span></li>
-                </ul>
-            </dd>
-        </dl>
-
-        <ul class="inputComment clearfix">
-            <li><input type="text" name="" id="" placeholder="댓글을 입력해 주세요."></li>
-            <li><button type="submit" class="sideBtn">보내기</button></li>
-        </ul>
     </section>
 
     <footer>
@@ -72,7 +117,7 @@
 </div>
 
 <script>
-    toggleList();
+    label();
 </script>
 
 </body>
