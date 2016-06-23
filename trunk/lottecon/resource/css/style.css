@@ -134,6 +134,8 @@ h1.signup img { width: 163px; height: 48px;}
     .termsArea .p2 { letter-spacing: -1.5px;}
 }
 
+input.inputSize1 { width: 64%; width: calc(100% - 58px);}
+
 /* 현장선택 */
 .searchWrap.sideArea input[type='text'] { float: left; width: 75%;}
 .searchWrap.sideArea .sideBtn { float: right; width: 23%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
@@ -230,8 +232,8 @@ label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spaci
 
 .cArea1 { padding-top: 12px !important;}
 input[type="checkbox"]{ display:none; }
-input[type="checkbox"] + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_check1.png) no-repeat 0 -27px; background-size: 27px auto; vertical-align: -30%; }
-input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_check1.png) no-repeat 0 0; background-size: 27px auto; }
+input[type="checkbox"] + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_check1.png) no-repeat 0 -20px; background-size: 20px auto; vertical-align: -30%; }
+input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_check1.png) no-repeat 0 0; background-size: 20px auto; }
 
 .tdButton { box-sizing: border-box; padding: 0; width: 100%; height: 35px; border: 0; color: #fff; font-size: 15px;}
 
