@@ -71,7 +71,11 @@
                 </tr>
                 <tr>
                     <th scope="row">생 년 월 일</th>
-                    <td><input type="text" name="" id=""></td>
+                    <td>
+                        <input type="text" name="" id="" class="size1"> <!-- TO 개발 : size1 추가, 아래 음력 체크 추가-->
+                        <input type="checkbox" name="myArea" id="a1">
+                        <label for="a1"></label><span class="label">음력</span>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">전 화 번 호</th>
@@ -135,6 +139,10 @@
         </ul>
     </footer>
 </div>
+
+<script>
+    label();
+</script>
 
 </body>
 </html>
