@@ -46,7 +46,7 @@ var toggleList = function() {
     })
 };
 
-/* 그래프 */
+/* 그래프 숨기기 */
 var graphOn = function(){
     setInterval(function(){
         $('.oList1 li:nth-child(3)').hide(); }, 500
