@@ -118,6 +118,8 @@ input[type='text'], input[type='password'], input[type='time'], input[type='tel'
 .btnCal { position: absolute; top: 14px; right: 18px; display: none; width: 24px; height: 22px; background: url(../images/ico_cal.png) no-repeat 0 0; background-size: 24px auto; text-indent: -1000px;}
 .datepicker + img { position: absolute; top: 14px; right: 16px; width: 24px; height: 22px; background: url(../images/ico_cal.png) no-repeat 0 0; background-size: 24px auto; text-indent: -1000px;}
 
+#columnChart { margin: 0 auto; padding: 30px 10px 20px; height: 400px; background: #fff;}
+
 /* 버튼 */
 .btnArea { margin-top: 15px; text-align: center;}
 .btnArea:after { display: block; clear: both; content: '';}
@@ -305,7 +307,8 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .uList1 li.active a { display: inline-block; border-bottom: 2px solid #fa2828; color: #fa2828;}
 
 .oList1 li { display: none;}
-.oList1 li.active { display: list-item;}
+.oList1 li:nth-child(3) { display: list-item;}
+.oList1 li.active { display: list-item !important;}
 .cMethod { margin-top: 10px; color: #444; letter-spacing: -1px; font-size: 13px;}
 .cMethod em { color: #fa2828;}
 
