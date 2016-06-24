@@ -45,3 +45,10 @@ var toggleList = function() {
         $(this).parent().next().show();
     })
 };
+
+/* 그래프 */
+var graphOn = function(){
+    setInterval(function(){
+        $('.oList1 li:nth-child(3)').hide(); }, 500
+    );
+};
