@@ -12,10 +12,17 @@
 .clearfix {display:block;clear:both;overflow:visible;width:auto;*zoom:1}
 .clearfix:after {display:block;visibility:hidden;clear:both;height:0;content:'';font-size:0}
 .posr { position: relative;}
+.tal { text-align: left !important; text-indent: 12px;}
 
 .w100p { width: 100% !important;}
 .w75p { width: 75% !important;}
 .color1 { color: #fca727;}
+.font_red { color: #fa2828 !important;}
+.font_blue { color: #0158b5;}
+
+.request_1 { color: #0158b5;}
+.request_2 { color: #fca727;}
+.request_3 { color: #fa2828;}
 
 /* MAIN */
 #main { background: #fff;}
@@ -111,10 +118,18 @@ input[type='text'], input[type='password'], input[type='time'], input[type='tel'
 .tbl_type2 td { padding: 16px 0; border: solid #dcdcdc; border-width: 0 0 1px 1px; background: #fff; text-align: center;}
 .tbl_type2 td:first-child { border-left-width: 0;}
 .cgp1 col:first-child { width: 35%;}
+
 .cgp2 col:nth-child(1) { width: 15%;}
 .cgp2 col:nth-child(2) { width: 31%;}
 .cgp2 col:nth-child(3) { width: 26%;}
 .cgp2 col:nth-child(4) { width: 28%;}
+
+.cgp3 col:nth-child(1) { width: 65%;}
+.cgp3 col:nth-child(2) { width: 35%;}
+
+.cgp4 col:nth-child(1) { width: 70%;}
+.cgp4 col:nth-child(2) { width: 30%;}
+
 .btnCal { position: absolute; top: 14px; right: 18px; display: none; width: 24px; height: 22px; background: url(../images/ico_cal.png) no-repeat 0 0; background-size: 24px auto; text-indent: -1000px;}
 .datepicker + img { position: absolute; top: 14px; right: 16px; width: 24px; height: 22px; background: url(../images/ico_cal.png) no-repeat 0 0; background-size: 24px auto; text-indent: -1000px;}
 
@@ -141,15 +156,17 @@ input[type='text'], input[type='password'], input[type='time'], input[type='tel'
 .btnArea.ea3 button:nth-child(2) { float: left; margin-left: 2%;}
 .btnArea.ea3 button:nth-child(3) { float: right;}
 
+.smBtn { box-sizing: border-box; padding-bottom: 2px; width: 46px; height: 25px; font-size: 12px;}
+.ColorX { background: #fa2828; color: #fff;}
+.ColorX2 { border: 1px solid #fa2828 ; background: #fff; color: #fa2828;}
+
 /* 회원가입 */
 .sosok td { padding: 8px 10px 8px 8px;}
 .tdBtn1 { position: absolute; top: 9px; right: 9px; width: 66px; height: 36px; border-left: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; line-height: 36px;}
-.font_red { color: #fa2828;}
 .datePeriod input { width: 44.5%; text-align: center; text-indent: 0;}
 .datePeriod span { display: inline-block; width: 4.5%;}
 
 @media screen and ( max-device-width: 320px ) {
-    /*.tbl_type1 th { padding: 0 3px;}*/
     .datePeriod input { width: 43%;}
     .datePeriod span { width: 4%;}
 }
@@ -338,9 +355,32 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .pushList dd li:first-child { margin-top: 0;}
 .pushList label { vertical-align: sub !important;}
 .pushList dt .label { color: #333; font-size: 15px;}
-.pushList dd .label { color: #707070; font-size: 14px;}
+.pushList dd .label { color: #707070; font-size: 14px; }
 
-    /* FOOTER */
+/* 설정 */
+.sideList2 { margin-top: 10px; border-top: 1px solid #e5e5e5; background: #fff;}
+.sideList2 li { padding: 0 16px; height: 50px; border: solid #e5e5e5; border-width: 0 1px 1px 1px; line-height: 50px;}
+.sideList2 li a { display: inline-block; width: 100%; height: 100%; color: #333;}
+.sideList2 li a em { float: right; color: #999;}
+
+/* 현장승인현황 */
+.cgp5 col:nth-child(1) { width: 28%;}
+.cgp5 col:nth-child(2) { width: 30%;}
+.cgp5 col:nth-child(3) { width: 42%;}
+
+.tdSize1 td { padding: 10px 0 !important;}
+.tdSize1 td span { display: block; margin-bottom: 5px;}
+
+/* PIN 설정 */
+.pinSet col:nth-child(1) { width: 70%;}
+.pinSet col:nth-child(2) { width: 30%;}
+.pinSet td:nth-child(1) { text-align: left; text-indent: 20px;}
+.pinSet td:nth-child(2) { border-left: 0 !important;}
+
+input[type="checkbox"].pin + label { display:inline-block; padding: 0; width: 50px; height: 26px; background: url(../images/ico_pin.png) no-repeat 0 -26px; background-size: 50px auto;}
+input[type="checkbox"].pin:checked + label { display:inline-block; background: url(../images/ico_pin.png) no-repeat 0 0; background-size: 50px auto; }
+
+/* FOOTER */
 footer { position: fixed; bottom: 0; left: 0; z-index: 1000; width: 100%; height: 55px; border-top: 1px solid #dcdcdc; background: #fff;}
 footer ul { padding: 0 20px; height: 100%;}
 footer ul:after { display: block; clear: both; content: '';}
