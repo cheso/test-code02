@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+    <script>
+        $(function() {
+            $( ".datepicker" ).datepicker({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+                changeMonth: true,
+                changeYear: true,
+                yearSuffix: '년',
+                showOn: "button",
+                buttonImage: "../resource/images/ico_cal.png",
+                buttonImageOnly: true
+            });
+        });
+    </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>재해보고 작성</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content">
+        <form action="">
+
+            <!-- TO개발 : 여기부분에 단계별 디자인 빠져서 마크업 아직 안됨, 디자인 요청했으니 받으면 바로 작업해서 알려드릴게요! -->
+
+            <h2>현장개요</h2>
+            <table class="tbl_type1">
+                <colgroup class="cgp1">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">공 사 기 간</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">공 사 금 액</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">공 정 율</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">현장소장명</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">안전팀장명</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>사고개요</h2>
+            <table class="tbl_type1">
+                <colgroup class="cgp1">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">일 시</th>
+                    <td><input type="time" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">장 소</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">재 해 형 태</th>
+                    <td class="posr">
+                        <input type="text" name="" id="">
+                        <a href="#" class="srchBtn"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">성 명</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">파 트 너 사</th>
+                    <td class="posr">
+                        <input type="text" name="" id="">
+                        <a href="#" class="srchBtn"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">직 종</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">년 생</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">재 해 규 모</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>사고경위</h2>
+            <textarea class="textarea1"></textarea>
+
+            <h2>관련 사진</h2>
+            <ul class="photoArea">
+                <li><img src="../resource/images/img_dummy2.png" alt=""></li>
+                <li><img src="../resource/images/img_dummy2.png" alt=""></li>
+            </ul>
+
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA">등록</button>
+            </div>
+
+<!--
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA">수정</button>
+                <button type="button" class="button btnColorB2">삭제</button>
+            </div>
+-->
+<!--
+
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA">수정</button>
+                <button type="button" class="button btnColorB">삭제</button>
+                <button type="button" class="button btnColorC">조치완료</button>
+            </div>
+-->
+
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<script>
+    label();
+    btnCount();
+</script>
+
+</body>
+</html>
