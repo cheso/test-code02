@@ -2,8 +2,9 @@
 
 /* base */
 .mt0 { margin-top: 0 !important;}
+.mt10 { margin-top: 10px !important;}
 .mt20 { margin-top: 20px !important;}
-.f_l {float:left}
+.f_l {float:left !important}
 .f_r {float:right !important}
 .f_n { float:none !important}
 .cl_b {clear:both;width:0;height:0;font-size:0;line-height:0}
@@ -14,6 +15,7 @@
 .clearfix:after {display:block;visibility:hidden;clear:both;height:0;content:'';font-size:0}
 .posr { position: relative;}
 .tal { text-align: left !important; text-indent: 12px;}
+.fz14 { font-size: 15px !important;}
 
 .w100p { clear: both; width: 100% !important;}
 .w75p { width: 75% !important;}
@@ -81,13 +83,13 @@
 .tab_change li a { display: inline-block; width: 100%; height: 100%; color: #999; text-align: center; font-size: 16px;}
 .tab_change li.on a { color: #bc2222}
 
-.tabContents section { display: none;}
+.tabContents section { display: none; padding-top: 20px;}
 .tabContents section.on { display: block;}
-.tabContents p { position: relative; margin: 15px 0 10px; padding-left: 10px; color: #999; font-size: 13px;}
-.tabContents p:after { position: absolute; top: 3px; left: 0; content: '*';}
-.tabContents input{ margin-top: 10px; height: 48px;}
-.tabContents table { margin-top: 30px;}
-.tabContents button[type=submit]{ margin-top: 10px; border-radius: 4px;}
+.tabContents .id_pass p { position: relative; margin: 0 0 10px; padding-left: 10px; color: #999; font-size: 13px;}
+.tabContents .id_pass p:after { position: absolute; top: 3px; left: 0; content: '*';}
+.tabContents .id_pass input{ margin-top: 10px; height: 48px;}
+.tabContents .id_pass table { margin-top: 30px;}
+.tabContents .id_pass button[type=submit] { margin-top: 10px; border-radius: 4px;}
 
 /* 팝업 */
 .popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}/* 520 424   110 314 */
@@ -143,6 +145,10 @@ input[type='text'], input[type='password'], input[type='time'], input[type='tel'
 .datepicker + img { position: absolute; top: 14px; right: 16px; width: 24px; height: 22px; background: url(../images/ico_cal.png) no-repeat 0 0; background-size: 24px auto; text-indent: -1000px;}
 
 #columnChart { margin: 0 auto; padding: 30px 10px 20px; height: 400px; background: #fff;}
+
+/* 라디오모양 체크박스 */
+input[type="checkbox"].radio + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_radio1.png) no-repeat 0 -27px; background-size: 27px auto; vertical-align: -30%; }
+input[type="checkbox"].radio:checked + label { display:inline-block; padding: 0; width: 27px; height: 27px; background: url(../images/ico_radio1.png) no-repeat 0 0; background-size: 27px auto; }
 
 /* 버튼 */
 .btnArea { margin-top: 15px; text-align: center;}
@@ -242,7 +248,6 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 }
 
 /* 본사/현장공지 상세*/
-.noticeDetail {}
 .noticeDetail div { box-sizing: border-box; background: #fff;}
 .noticeDetail .nTitle { padding-left: 22px; width: 100%; height: 45px; border: 1px solid #dcdcdc; color: #333333; font-weight: bold; font-size: 15px; line-height: 45px;}
 .noticeDetail .nContent { overflow-y: scroll; padding: 10px 0 10px 22px; width: 100%; height: 119px; border: solid #dcdcdc; border-width: 0 1px 1px;}
@@ -314,6 +319,32 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 /* 안전신호등 */
 .cgp6 col:nth-child(1) { width: 50%;}
 .cgp6 col:nth-child(2) { width: 30%;}
+
+/* SAFETING */
+.searchWrap.sideArea3 input[type='text'] { float: right; margin-top: 0; width: 75%;}
+.searchWrap.sideArea3 .sideBtn, .sideBtn  { float: left; width: 23%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
+
+.tableChat1 { margin-top: 10px !important; width: 100%; border-collapse: collapse; border-bottom: 1px solid #dcdcdc;}
+.tableChat1 th, .tableChat1 td { height: 50px;}
+.tableChat1 thead { }
+.tableChat1 thead th { color: #333; text-align: left; text-indent: 25px;}
+.tableChat1 thead td { }
+.tableChat1 tbody { }
+.tableChat1 tbody th { padding-left: 25px; border: 1px solid #dcdcdc; background: #eee; color: #333; text-align: left;}
+.tableChat1 tbody td { border: solid #dcdcdc; border-width: 0 1px 0 0; background: #fff;}
+.tableChat1 tbody td:first-child { text-align: center;}
+.tableChat1 tbody td:first-child { border-left: 1px solid #dcdcdc;}
+
+.cgp7 col:nth-child(1) { width: 78px;}
+.cgp7 col:nth-child(2) { }
+
+.faceImg { display: inline-block; margin: 6px 6px 0 25px; vertical-align: middle;}
+.faceImg img { width: 38px; height: 38px; border-radius: 50%;}
+.tableChat1 .s1 { color: #666;}
+.tableChat1 .s2 { color: #999;}
+
+.noChat { color: #333; font-size: 13px;}
+
 
 /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
@@ -406,7 +437,7 @@ label + .label { display: inline-block; margin: 0 3px; color: #333; letter-spaci
 }
 
 .cArea1 { padding-top: 12px !important;}
-input[type="checkbox"]{ display:none; }
+input[type="checkbox"]{ display:none;}
 input[type="checkbox"] + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_check1.png) no-repeat 0 -20px; background-size: 20px auto; vertical-align: -30%; }
 input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width: 20px; height: 20px; background: url(../images/ico_check1.png) no-repeat 0 0; background-size: 20px auto; }
 
