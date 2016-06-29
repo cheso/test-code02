@@ -26,10 +26,10 @@ var tabArea = function(){
 };
 
 /* 아이디, 비밀번호 찾기 */
-var tab_id_pass = function (){
-    $(document).on('click','.tab_id_pass li a', function(){
+var tab_change = function (){
+    $(document).on('click','.tab_change li a', function(){
         var theNum = $(this).parent().index();
-        $('.tab_id_pass li').removeClass('on');
+        $('.tab_change li').removeClass('on');
         $(this).parent().addClass('on');
         $('.tabContents section').removeClass('on').eq(theNum).addClass('on');
     })
@@ -51,7 +51,7 @@ var toggleList2 = function() {
     $(document).on('click','.sumList dt a', function(e){
         $(this).toggleClass('on');
         $(this).parent().next().toggle();
-        
+
         e.preventDefault();
         e.stopPropagation();
     })
