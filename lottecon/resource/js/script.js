@@ -37,12 +37,23 @@ var tab_id_pass = function (){
 
 /* 부외 자산 */
 var toggleList = function() {
-    $(document).on('click','.buoiList dt a', function(){
-        $('.buoiList').find('dt').removeClass('on');
-        $('.buoiList').find('dd:not(:hidden)').hide();
+    $(document).on('click','.buoiList dt a', function(e){
+        $(this).parent().toggleClass('on');
+        $(this).parent().next().toggle();
 
-        $(this).parent().addClass('on');
-        $(this).parent().next().show();
+        e.preventDefault();
+        e.stopPropagation();
+    })
+};
+
+/* 현장개요 */
+var toggleList2 = function() {
+    $(document).on('click','.sumList dt a', function(e){
+        $(this).toggleClass('on');
+        $(this).parent().next().toggle();
+        
+        e.preventDefault();
+        e.stopPropagation();
     })
 };
 
