@@ -292,6 +292,11 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .bottomFiexd li:nth-child(2) { float: right; width: 26%;}
 .bottomFiexd input { width: 100%; height: 50px;}
 .bottomFiexd .sideBtn { width: 100%; height: 52px; background: #fa2828; color: #fff; font-size: 16px;}
+.bottomFiexd .inputComment { position: relative; box-sizing: border-box; padding: 14px 0 0 10px; width: 100%; height: 52px; border: 1px solid #e5e5e5; background: #fff; color: #999;}
+.bottomFiexd .inputComment:after { position: absolute; top: 30%; left: 10px; content:'댓글을 입력해 주세요.'}
+.bottomFiexd .inputComment.clear:after { display: none;}
+
+
 
 /* 부외자산 조회 */
 .buoiList { margin-top: 20px; width: 100%; border: solid #dcdcdc; border-width: 0 1px 1px 1px; background: #fff;}
@@ -355,6 +360,10 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .searchResult section .imgArea span.ok { background: #fca727; text-indent: 16px;}
 .searchResult section .imgArea span.ok:before { position: absolute; top: 14px; left: 15px; width:15px; height: 11px; background: url(../images/ico_check.png) no-repeat 0 0; background-size: 15px auto; content:'';}
 
+.searchResult section .imgArea2 { position: relative; float: right; width: 98px; height: 98px; border: 1px solid #e5e5e5; border-radius: 3px;}
+.searchResult section .imgArea2 div { width: 100%; height: 100%; background: #f8f8f8;}
+.searchResult section .imgArea2 div img { width: 100%; height: 100%;}
+
 /* 잠재위험 등록 */
 .photoArea { width: 100%; text-align: center;}
 .photoArea:after { display: block; clear: both; content: '';}
@@ -402,7 +411,8 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 
 /* 재해긴급 PUSH */
 .pushList { width: 100%; border: solid #dcdcdc; border-width: 0 1px 1px 1px; background: #fff;}
-.pushList dt { position: relative; padding: 13px 15px; border-top: 1px solid #dcdcdc;}
+.pushList dt { position: relative; padding: 13px 15px; /*border-top: 1px solid #dcdcdc;*/}
+.pushList:first-child dt { border-top: 1px solid #dcdcdc;}
 .pushList dd { display: block; padding: 11px 15px 11px 36px; border-top: 1px solid #dcdcdc; color: #707070; font-size: 14px;}
 .pushList dd .depth2 > li { margin-top: 8px;}
 .pushList dd .depth2 > li:first-child { margin-top: 0;}
