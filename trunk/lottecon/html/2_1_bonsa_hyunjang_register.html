@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>글 등록</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content">
+        <form action="">
+            <div class="registerArea">
+                <div class="btnArea ea2">
+                    <button type="button" class="button btnColorC f_r">공지대상</button>
+                </div>
+                <textarea class="textarea2"></textarea>
+                <div class="btnArea ea2">
+                    <button type="button" class="button btnColorD f_l">카테고리</button>
+                    <select name="" class="f_r">
+                        <option value="">발굴</option>
+                        <option value="">검토</option>
+                        <option value="">조치</option>
+                    </select>
+                </div>
+                <div class="writeArea">
+                    <input type="text" name="" id="" placeholder="제목">
+                    <textarea class="textarea4" placeholder="내용"></textarea>
+                </div>
+
+                <div class="addArea">
+                    <div class="d1">
+                        <button type="button" class="add1"></button>
+                        <button type="button" class="add2"></button>
+                    </div>
+                    <div class="d2">
+                        <input type="text" name="" id="">
+                        <button type="button" class="addBtn">첨부</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnArea ea2">
+                <button type="button" class="button btnColorA">등록</button>
+                <button type="button" class="button btnColorB2">삭제</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- 팝업 -->
+<div class="popWrap" style="display: none;">
+    <section class="md1">
+        <h1>공지대상 선택</h1>
+        <a href="#" class="btnX">닫기</a>
+        <p>SMS로 임시비밀번호가<br>전송되었습니다.</p>
+        <div class="btnArea">
+            <button type="button" class="button btnColorA">확인</button>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
