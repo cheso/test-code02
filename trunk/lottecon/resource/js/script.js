@@ -52,3 +52,16 @@ var graphOn = function(){
         $('.oList1 li:nth-child(3)').hide(); }, 500
     );
 };
+
+
+/* push 대상자 토글 */
+var aTog = function(){
+    $(document).on('click','.aTog',function(e){
+        $(this).parent().next().toggle();
+        $(this).toggleClass('off');
+
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+};
