@@ -78,7 +78,9 @@
         </div>
 
         <ul class="bottomFiexd clearfix">
-            <li><input type="text" name="" id="" placeholder="댓글을 입력해 주세요."></li>
+            <li>
+                <div contenteditable class="inputComment"></div> <!-- 아래에 스크립트도 추가했어요 -->
+            </li>
             <li><button type="submit" class="sideBtn">보내기</button></li>
         </ul>
     </section>
@@ -92,6 +94,12 @@
         </ul>
     </footer>
 </div>
+
+<script>
+    $('.inputComment').focus(function(){
+        $(this).addClass('clear');
+    });
+</script>
 
 </body>
 </html>
