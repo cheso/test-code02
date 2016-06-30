@@ -329,15 +329,15 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .tableChat1 thead th { color: #333; text-align: left; text-indent: 25px;}
 .tableChat1 thead td { }
 .tableChat1 tbody { }
-.tableChat1 tbody th { padding-left: 25px; border: 1px solid #dcdcdc; background: #eee; color: #333; text-align: left;}
+.tableChat1 tbody th { padding-left: 15px; border: 1px solid #dcdcdc; background: #eee; color: #333; text-align: left;}
 .tableChat1 tbody td { border: solid #dcdcdc; border-width: 0 1px 0 0; background: #fff;}
 .tableChat1 tbody td:first-child { text-align: center;}
 .tableChat1 tbody td:first-child { border-left: 1px solid #dcdcdc;}
 .tableChat1 .s1 { color: #666;}
 .tableChat1 .s2 { color: #999;}
-.cgp7 col:nth-child(1) { width: 78px;}
+.cgp7 col:nth-child(1) { width: 50px;}
 .cgp7 col:nth-child(2) { }
-.faceImg { display: inline-block; margin: 6px 6px 0 25px; vertical-align: middle;}
+.faceImg { display: inline-block; margin: 6px 6px 0 15px; vertical-align: middle;}
 .faceImg img { width: 38px; height: 38px; border-radius: 50%;}
 .sideList li a.c333 { color: #333;}
 .noChat { margin-top: 100px; color: #333; text-align: center; font-size: 15px;}
@@ -348,7 +348,6 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .chatRoom .top a.chatOut { left: 0; background: url(../images/ico_out.png) no-repeat 50% 50%; background-size: 25px auto;}
 .chatRoom .top a.userAdd { right: 0; background: url(../images/ico_user_add.png) no-repeat 50% 50%; background-size: 25px auto;}
 .chatRoom .top p { overflow: hidden; margin: auto; width: 56%; height: 100%; text-align: center; text-overflow: ellipsis; white-space: nowrap; line-height: 45px;}
-.chatRoom .room { margin-top: 15px; padding: 10px; height: 345px; border: 1px solid #dcdcdc; background: #fff;}
 
 
 /* 자료실 */
