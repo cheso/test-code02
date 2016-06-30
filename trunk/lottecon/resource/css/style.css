@@ -20,10 +20,6 @@
 .w100p { clear: both; width: 100% !important;}
 .w75p { width: 75% !important;}
 .color1 { color: #fca727;}
-.colorA { color: #0bbdb9;}
-.colorB { color: #0158b5;}
-.colorC { color: #fca727;}
-.colorD { color: #fa2828;}
 .font_red { color: #fa2828 !important;}
 .font_blue { color: #0158b5;}
 
@@ -318,6 +314,11 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 /* 안전신호등 */
 .cgp6 col:nth-child(1) { width: 50%;}
 .cgp6 col:nth-child(2) { width: 30%;}
+.tdc { display: inline-block; width: 30px; height: 30px; border-radius: 50%; color: #fff; font-size: 15px; line-height: 30px;}
+.colorA { background: #1a9711;}
+.colorB { background: #0072c4;}
+.colorC { background: #ffa616;}
+.colorD { background: #da001c;}
 
 /* SAFETING */
 .searchWrap.sideArea3 input[type='text'] { float: right; margin-top: 0; width: 75%;}
