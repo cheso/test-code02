@@ -99,7 +99,13 @@
 .popWrap section .popBtnArea button { padding: 11px 0; width: 155px; border: 1px solid #fa2828; color: #ea2a2a; font-weight: bold; font-size: 16px;}
 .popWrap .btnX { position: absolute; top: 12px; right: 13px; width: 30px; height: 30px; background: url(../images/ico_x.png) no-repeat 50% 50%; background-size: 15px auto; text-indent: -10000px;}
 
-
+.chatWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}/* 520 424   110 314 */
+.chatWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
+.chatWrap section { position: absolute; top: 49px; right: 0; z-index: 1200; box-sizing: border-box; padding: 0 20px 30px; background: #fff;}
+.chatWrap section.no1 { overflow-y: scroll; width: 90%; height: 86%;}
+.chatWrap section h1 { margin: 0 -20px 20px; height: 55px; background: #727272; color: #fff; font-weight: normal; font-size: 16px; line-height: 55px;}
+.chatWrap .tableWrap { margin: 20px -20px 30px;}
+.chatWrap .tableChat1 tbody td { text-align: left;}
 
 /* HEADER */
 header { position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; height: 49px; border-bottom: 1px solid #d2d2d2; background: #fa2828; line-height: 49px;}
@@ -350,6 +356,40 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .chatRoom .top a.userAdd { right: 0; background: url(../images/ico_user_add.png) no-repeat 50% 50%; background-size: 25px auto;}
 .chatRoom .top p { overflow: hidden; margin: auto; width: 56%; height: 100%; text-align: center; text-overflow: ellipsis; white-space: nowrap; line-height: 45px;}
 
+.room { overflow-y: scroll; margin-top: 15px; padding: 8px 24px 23px; /*height: 345px; */border: 1px solid #dcdcdc; background: #fff;}
+.room .roomP { position: relative; margin: 15px 0; padding: 14px; border-radius: 6px; color: #333; font-size: 14px;}
+.room .roomP:after { position: absolute; bottom: 20px; width: 15px; height: 15px; content: '';}
+.room .roomP em { font-weight: bold;}
+.room .you p { float: left; width: 80%; border: 1px solid #e3e3e3; background: #f4f4f4;}
+.room .you p:after { position: absolute; left: -15px; background: url(../images/ico_you.png) no-repeat 0 0; background-size: 15px auto;}
+.room .you p em { display: block;}
+.room .me p { float: right; width: 80%; border: 1px solid #c4e2e1; background: #d1f2f1;}
+.room .me p:after { position: absolute; right: -15px; background: url(../images/ico_me.png) no-repeat 0 0; background-size: 15px auto;}
+.room .me p em { display: block;}
+
+.room .roomP span { position: absolute;}
+.room .roomP .cnt { bottom: 10px; color: #d1f2f1; font-weight: bold; font-size: 12px;}
+.room .you .roomP .cnt { right: -20px;}
+.room .me .roomP .cnt { left: -20px;}
+.room .roomP .date { bottom: -20px; color: #777777; font-size: 12px;}
+.room .you .roomP .date { left: 10px;}
+.room .me .roomP .date { right: 10px;}
+
+.inputTxt { /*position: fixed; bottom: 63px; left: 0; */box-sizing: border-box; margin-top: 18px; width: 100%; height: 50px;}
+.inputTxt:after { display: block; clear: both; content: '';}
+.inputTxt .d1 { float: left; margin-right: 6px; width: 87px;}
+.inputTxt .d1 button { display: inline-block; width: 41px; height: 41px;}
+.inputTxt .d1 .cBtn1 { background: url(../images/ico_chat_1.png) no-repeat 0 0; background-size: 41px auto;}
+.inputTxt .d1 .cBtn2 { background: url(../images/ico_chat_2.png) no-repeat 0 0; background-size: 41px auto;}
+
+.inputTxt .d2 { float: right; margin-top: -4px; width: calc(100% - 96px);}
+.inputTxt .d2  input { margin-right: 5px; width: 68%; height: 50px;}
+.inputTxt .d2  .commit { width: 26%; height: 50px; border: 1px solid #000;}
+
+@media screen and ( max-device-width: 320px ){
+    .inputTxt .d1 { margin-right: 0;}
+    .inputTxt .d2 { width: calc(100% - 90px);}
+}
 
 /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
@@ -501,7 +541,7 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .searchWrap .type1 li { padding-bottom: 10px;}
 .searchWrap .type1 select { color: #999;}
 
-/* 재해긴급 목록 */
+/* 재해긴급 */
 .searchResult3 { margin-top: 17px; padding: 5px 16px 5px 16px; border: 1px solid #dcdcdc; background: #fff;}
 .searchResult3 section { margin-bottom: 12px; padding-top: 12px; border-top: 1px solid #dcdcdc;}
 .searchResult3 section:first-child { border-top: 0;}
@@ -513,7 +553,6 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .searchResult3 section .imgArea3 { float: right; margin-top: 4px; width: 58px; height: 58px;}
 .searchResult3 section .imgArea3 img { width: 100%; height: 100%; border-radius: 50%;}
 
-/* 재해긴급 PUSH */
 .pushList { width: 100%; border: solid #dcdcdc; border-width: 0 1px 1px 1px; background: #fff;}
 .pushList dt { position: relative; padding: 13px 15px;}
 .pushList:first-child dt { border-top: 1px solid #dcdcdc;}
@@ -527,6 +566,13 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .pushList dd .label { color: #707070; font-size: 14px; }
 .aTog { position: absolute; top: 0; right: 0; width: 48px; height: 48px; background: url(../images/ico_minus.png) no-repeat 50% 50%; background-size: 14px auto; text-indent: -10000px;}
 .aTog.off { background: url(../images/ico_plus.png) no-repeat 50% 50%; background-size: 14px auto;}
+
+.step { margin: auto; width: 225px; height: 31px; background: url(../images/bg_step4.png) no-repeat 0 0; background-size: 225px auto;} /* 450 310 */
+.step.step1 { background-position: 0 -31px;}
+.step.step2 { background-position: 0 -62px;}
+.step.step3 { background-position: 0 -93px;}
+.step.step4 { background-position: 0 -124px;}
+.step ul { position: fixed; left: -100000px; width: 1px; height: 1px; font-size: 1px;}
 
 /* 설정 */
 .sideList2 { margin-top: 10px; border-top: 1px solid #e5e5e5; background: #fff;}
