@@ -48,10 +48,12 @@
                         <button type="button" class="add1"></button>
                         <button type="button" class="add2"></button>
                     </div>
-                    <div class="d2">
-                        <input type="text" name="" id="">
-                        <button type="button" class="addBtn">첨부</button>
+                    <div class="d2 fileBox">
+                        <span class="ph"><input type="text" id="lab2" readonly="readonly" title="선택 파일" /><em>파일을 첨부해 주세요</em></span>
+                        <span class="file">첨부<input type="file"/></span>
                     </div>
+
+                    <script></script>
                 </div>
             </div>
 
@@ -72,17 +74,9 @@
     </footer>
 </div>
 
-<!-- 팝업 -->
-<div class="popWrap" style="display: none;">
-    <section class="md1">
-        <h1>공지대상 선택</h1>
-        <a href="#" class="btnX">닫기</a>
-        <p>SMS로 임시비밀번호가<br>전송되었습니다.</p>
-        <div class="btnArea">
-            <button type="button" class="button btnColorA">확인</button>
-        </div>
-    </section>
-</div>
+<script>
+    filebox();
+</script>
 
 </body>
 </html>
