@@ -93,3 +93,12 @@ var filebox = function(){
     })
 
 };
+
+/* 채팅 */
+var chatBox = function(){
+    var sHt = window.innerHeight - 280;
+    $('.room').height(sHt);
+
+    var objDiv = document.getElementById('room');
+    objDiv.scrollTop = objDiv.scrollHeight;
+};
