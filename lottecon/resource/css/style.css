@@ -208,6 +208,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .sideList li { height: 50px; border: solid #e5e5e5; border-width: 0 1px 1px 1px; line-height: 50px;}
 .sideList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-indent: 14px;}
 
+
 /* 본사,현장공지 */
 .searchWrap.sideArea2 select { float: left; margin-right: 2%; width: 38%; color: #999;}
 .searchWrap.sideArea2 input[type='text'] { float: left; width: 38%;}
@@ -239,13 +240,11 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .addArea .d1 .add2 { background: url(../images/ico_add2.png) no-repeat 0 0; background-size: 41px auto;}
 
 .addArea .d2 { float: right; margin-top: -4px; width: calc(100% - 96px);}
-.addArea .d2  input { margin-right: 5px; width: 68%; height: 50px;}
-.addArea .d2  .addBtn { width: 26%; height: 50px; border: 1px solid #000;}
-
-@media screen and ( max-device-width: 320px ){
-    .addArea .d1 { margin-right: 0;}
-    .addArea .d2 { width: calc(100% - 90px);}
-}
+.fileBox { position: relative; width: 500px}
+.fileBox .ph input { position: relative; z-index: 5; overflow: hidden; width: 70%; height: 50px; border: 1px solid #e5e5e5;  background: #fff !important; color: #4f5f6f; text-overflow: ellipsis;  white-space: nowrap;}
+.ph em { position: absolute; top: 7px; left: 10px; z-index: 1; color: #999; font-size: 12px}
+.file { position: absolute; top: 1px; right: 0; box-sizing: border-box; width: 26%; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px;}
+.file input { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0);}
 
 /* 본사/현장공지 상세*/
 .noticeDetail div { box-sizing: border-box; background: #fff;}
@@ -334,16 +333,22 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .tableChat1 tbody td { border: solid #dcdcdc; border-width: 0 1px 0 0; background: #fff;}
 .tableChat1 tbody td:first-child { text-align: center;}
 .tableChat1 tbody td:first-child { border-left: 1px solid #dcdcdc;}
-
-.cgp7 col:nth-child(1) { width: 78px;}
-.cgp7 col:nth-child(2) { }
-
-.faceImg { display: inline-block; margin: 6px 6px 0 25px; vertical-align: middle;}
-.faceImg img { width: 38px; height: 38px; border-radius: 50%;}
 .tableChat1 .s1 { color: #666;}
 .tableChat1 .s2 { color: #999;}
+.cgp7 col:nth-child(1) { width: 78px;}
+.cgp7 col:nth-child(2) { }
+.faceImg { display: inline-block; margin: 6px 6px 0 25px; vertical-align: middle;}
+.faceImg img { width: 38px; height: 38px; border-radius: 50%;}
+.sideList li a.c333 { color: #333;}
+.noChat { margin-top: 100px; color: #333; text-align: center; font-size: 15px;}
 
-.noChat { color: #333; font-size: 13px;}
+.chatRoom { margin-top: -20px;}
+.chatRoom .top { position: relative; margin: 0 -20px; height: 45px; background: #fff;}
+.chatRoom .top a { position: absolute; top: 0; width: 45px; height: 45px; text-indent: -10000px;}
+.chatRoom .top a.chatOut { left: 0; background: url(../images/ico_out.png) no-repeat 50% 50%; background-size: 25px auto;}
+.chatRoom .top a.userAdd { right: 0; background: url(../images/ico_user_add.png) no-repeat 50% 50%; background-size: 25px auto;}
+.chatRoom .top p { overflow: hidden; margin: auto; width: 56%; height: 100%; text-align: center; text-overflow: ellipsis; white-space: nowrap; line-height: 45px;}
+.chatRoom .room { margin-top: 15px; padding: 10px; height: 345px; border: 1px solid #dcdcdc; background: #fff;}
 
 
 /* 자료실 */
