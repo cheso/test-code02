@@ -31,7 +31,7 @@ var tab_change = function (){
         var theNum = $(this).parent().index();
         $('.tab_change li').removeClass('on');
         $(this).parent().addClass('on');
-        $('.tabContents section').removeClass('on').eq(theNum).addClass('on');
+        $('.tabContents > section').removeClass('on').eq(theNum).addClass('on');
     })
 };
 
@@ -74,5 +74,22 @@ var aTog = function(){
         e.preventDefault();
         e.stopPropagation();
     });
+
+};
+
+/* 파일첨부 */
+var filebox = function(){
+    $(document).on("click",".fileBox .ph input",function(){
+        var idx = $(".fileBox .ph input").index(this);
+        $(".file input").eq(idx).click();
+    }).on("change",".file input",function(){
+        var idx = $(".file input").index(this);
+        if(!$(this).val()) {
+            $(".fileBox .ph em").eq(idx).show();
+        }else{
+            $(".fileBox .ph em").eq(idx).hide();
+        }
+        $(".fileBox .ph input").eq(idx).val($(this).val());
+    })
 
 };
