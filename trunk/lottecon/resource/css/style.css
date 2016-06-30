@@ -326,7 +326,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .tableChat1 { margin-top: 10px !important; width: 100%; border-collapse: collapse; border-bottom: 1px solid #dcdcdc;}
 .tableChat1 th, .tableChat1 td { height: 50px;}
 .tableChat1 thead { }
-.tableChat1 thead th { color: #333; text-align: left; text-indent: 25px;}
+.tableChat1 thead th { color: #333; text-align: left; text-indent: 12px;}
 .tableChat1 thead td { }
 .tableChat1 tbody { }
 .tableChat1 tbody th { padding-left: 15px; border: 1px solid #dcdcdc; background: #eee; color: #333; text-align: left;}
