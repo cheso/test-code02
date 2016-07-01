@@ -92,6 +92,7 @@
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
 .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; border-radius: 12px; background: #fff;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
+.popWrap section.sm2 { width: 90%; height: 300px;}
 .popWrap section.md1 { width: 86%; height: 90%;}
 .popWrap section h1 { margin: 0 -20px 20px; height: 55px; border-radius: 12px 10px 0 0; background: #bc2222; color: #fff; font-size: 16px; line-height: 55px;}
 .popWrap section p { color: #777; font-size: 17px;}
@@ -367,31 +368,54 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .room .me p:after { position: absolute; right: -15px; background: url(../images/ico_me.png) no-repeat 0 0; background-size: 15px auto;}
 .room .me p em { display: block;}
 
-.room .roomP span { position: absolute;}
-.room .roomP .cnt { bottom: 10px; color: #d1f2f1; font-weight: bold; font-size: 12px;}
+.room .roomP .cnt { position: absolute; bottom: 10px; color: #d1f2f1; font-weight: bold; font-size: 12px;}
 .room .you .roomP .cnt { right: -20px;}
 .room .me .roomP .cnt { left: -20px;}
-.room .roomP .date { bottom: -20px; color: #777777; font-size: 12px;}
+.room .roomP .date { position: absolute; bottom: -20px; color: #777; font-size: 12px;}
 .room .you .roomP .date { left: 10px;}
 .room .me .roomP .date { right: 10px;}
+.room .roomP .info { position: relative; display: inline-block; box-sizing: border-box; padding: 10px 0; width: 100%; height: 50px;}
+.room .roomP .info span { position: absolute;}
+.room .roomP .info .s0 { position: absolute; width: 35px; height: 35px; background: url(../images/ico_mo.png) no-repeat 0 0; background-size: 35px auto;}
+.room .roomP .info .s1 { top: 5px; left: 44px;}
+.room .roomP .info .s2 { top: 30px; left: 44px;}
 
-.inputTxt { /*position: fixed; bottom: 63px; left: 0; */box-sizing: border-box; margin-top: 18px; width: 100%; height: 50px;}
+.inputTxt { box-sizing: border-box; margin-top: 18px; width: 100%; height: 50px;}
 .inputTxt:after { display: block; clear: both; content: '';}
 .inputTxt .d1 { float: left; margin-right: 6px; width: 87px;}
-.inputTxt .d1 button { display: inline-block; width: 41px; height: 41px;}
+.inputTxt .d1 button { display: inline-block; width: 41px; height: 41px; text-indent: -10000px;}
 .inputTxt .d1 .cBtn1 { background: url(../images/ico_chat_1.png) no-repeat 0 0; background-size: 41px auto;}
 .inputTxt .d1 .cBtn2 { background: url(../images/ico_chat_2.png) no-repeat 0 0; background-size: 41px auto;}
 
 .inputTxt .d2 { float: right; margin-top: -4px; width: calc(100% - 96px);}
 .inputTxt .d2  input { margin-right: 5px; width: 68%; height: 50px;}
-.inputTxt .d2  .commit { width: 26%; height: 50px; border: 1px solid #000;}
+.inputTxt .d2 .commit { width: 26%; height: 50px; border: 1px solid #000;}
 
 @media screen and ( max-device-width: 320px ){
     .inputTxt .d1 { margin-right: 0;}
     .inputTxt .d2 { width: calc(100% - 90px);}
 }
 
-/* 자료실 */
+.menu1 { margin-top: 8px; border-top: 1px solid #dcdcdc;}
+.menu1 ul { margin: 14px auto -4px; width: 80%;}
+.menu1 ul:after { display: block; clear: both; content: '';}
+.menu1 ul li { float: left; width: 33.3%; width: calc(100%/3); text-align: center;}
+.menu1 ul li a { display: inline-block; width: 100%; height: 54px; font-size: 13px; line-height: 90px;}
+.menu1 ul li a.n1 { background: url(../images/ico_menu1_1.png) no-repeat 50% 0; background-size: 37px auto;}
+.menu1 ul li a.n2 { background: url(../images/ico_menu1_2.png) no-repeat 50% 0; background-size: 37px auto;}
+.menu1 ul li a.n3 { background: url(../images/ico_menu1_3.png) no-repeat 50% 0; background-size: 37px auto;}
+
+.menu2 { margin-top: 8px; border-top: 1px solid #dcdcdc;}
+.menu2 ul { margin: 14px auto -4px; width: 90%;}
+.menu2 ul:after { display: block; clear: both; content: '';}
+.menu2 ul li { float: left; width: 25%; text-align: center;}
+.menu2 ul li a { display: inline-block; width: 100%; height: 54px; font-size: 13px; line-height: 90px;}
+.menu2 ul li a.n1 { background: url(../images/ico_menu2_1.png) no-repeat 50% 0; background-size: 30px auto;}
+.menu2 ul li a.n2 { background: url(../images/ico_menu2_2.png) no-repeat 50% 0; background-size: 30px auto;}
+.menu2 ul li a.n3 { background: url(../images/ico_menu2_3.png) no-repeat 50% 0; background-size: 30px auto;}
+.menu2 ul li a.n4 { background: url(../images/ico_menu2_3.png) no-repeat 50% 0; background-size: 30px auto;}
+
+    /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
 .pdsList:after { display: block; clear: both; content: '';}
 .pdsList:first-child { border-top-width: 1px;}
@@ -523,6 +547,11 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .srchBtn { position: absolute; top: 16px; right: 16px; width: 22px; height: 22px; background: url(../images/ico_srch.png) no-repeat 0 0; background-size: 22px auto;}
 .textarea0 { box-sizing: border-box; margin: 8px 0; padding: 6px; width: 100%; height: 98px; border: 1px solid #e5e5e5;}
 .textarea1 { box-sizing: border-box; padding: 6px; width: 100%; height: 98px; border: 1px solid #e5e5e5;}
+
+.photoBtnArea { width: 48%; margin: -36px auto 10px;}
+.photoBtnArea a { display: inline-block; width: 33px; height: 33px; text-indent: -10000px;}
+.photoBtnArea .pa1 { background: url(../images/ico_camera_c.png) no-repeat 0 0; background-size: 33px auto;}
+.photoBtnArea .pa2 { background: url(../images/ico_photo_c.png) no-repeat 0 0; background-size: 33px auto;}
 
 
 /* 잠재위험 분석 */
