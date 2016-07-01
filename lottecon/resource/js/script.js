@@ -104,11 +104,13 @@ var chatBox = function(){
 
     $(document).on('click','.cBtn1',function(){
         $('.menu1').toggle();
+        $('.menu2').hide();
         var objBody1 = document.body;
         objBody1.scrollTop = objBody1.scrollHeight;
 
     }).on('click','.cBtn2',function(){
         $('.menu2').toggle();
+        $('.menu1').hide();
         var objBody2 = document.body;
         objBody2.scrollTop = objBody2.scrollHeight;
     });
