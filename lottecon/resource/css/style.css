@@ -27,6 +27,23 @@
 .request_2 { color: #fca727;}
 .request_3 { color: #fa2828;}
 
+/* GNB */
+.fadeWrap { position: fixed; top: 0; left: 0; z-index: 1200; display: none; width: 100%; height: 100%; background: #000; opacity: 0.4;}
+.fullMenu { position: fixed; top: 0; left: -80%; z-index: 1300; overflow-y: scroll; width: 80%; height: 100%; background: #fff;}
+.fullMenu h1 { position: fixed; top: 0; left: -80%; width: 80%; height: 55px; background: #bc2222; text-align: center; line-height: 55px;}
+.fullMenu h1 img { width: 113px;}
+.depth1 { margin-top: 56px;}
+.depth1 a { display: inline-block; width: 100%; font-size: 14px;}
+.depth1 .aLink1 { height: 48px; border-bottom: 1px solid #dbdbdb; color: #8f8f94; text-indent: 17px; font-size: 15px; line-height: 48px;}
+.depth2 .aLink2 { box-sizing: border-box; margin-bottom: 5px; height: 44px; background: url(../images/ico_arr1.png) no-repeat right 17px top 50%; background-size: 15px auto; color: #262626; text-indent: 27px; line-height: 50px;}
+.depth2 .aLink2.on {  background: url(../images/ico_arr3.png) no-repeat right 17px top 50%; background-size: 15px auto;}
+.depth2 .aLink2.none { background: none;}
+.depth3 { display: none;}
+.depth3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; text-indent: 50px; line-height: 26px;}
+.fullWrap hr { margin: 0; padding: 0; height: 5px; border: solid #dbdbdb; border-width: 1px 0;}
+.fullWrap .depth2 > li:last-child hr { height: 1px; border: solid #dbdbdb; border-width: 1px 0 0;}
+.btnX { position: absolute; top: 0; right: 0; width: 55px; height: 55px; background: url(../images/full_btnX.png) no-repeat 50% 50%; background-size: 15px auto;}
+
 /* MAIN */
 #main { background: #fff;}
 #main  { padding: 0 6%;}
@@ -88,11 +105,11 @@
 .tabContents .id_pass button[type=submit] { margin-top: 10px; border-radius: 4px;}
 
 /* 팝업 */
-.popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}/* 520 424   110 314 */
+.popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
 .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; border-radius: 12px; background: #fff;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
-.popWrap section.sm2 { width: 90%; height: 300px;}
+.popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 320px;}
 .popWrap section.md1 { width: 86%; height: 90%;}
 .popWrap section h1 { margin: 0 -20px 20px; height: 55px; border-radius: 12px 10px 0 0; background: #bc2222; color: #fff; font-size: 16px; line-height: 55px;}
 .popWrap section p { color: #777; font-size: 17px;}
@@ -100,7 +117,7 @@
 .popWrap section .popBtnArea button { padding: 11px 0; width: 155px; border: 1px solid #fa2828; color: #ea2a2a; font-weight: bold; font-size: 16px;}
 .popWrap .btnX { position: absolute; top: 12px; right: 13px; width: 30px; height: 30px; background: url(../images/ico_x.png) no-repeat 50% 50%; background-size: 15px auto; text-indent: -10000px;}
 
-.chatWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}/* 520 424   110 314 */
+.chatWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .chatWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
 .chatWrap section { position: absolute; top: 49px; right: 0; z-index: 1200; box-sizing: border-box; padding: 0 20px 30px; background: #fff;}
 .chatWrap section.no1 { overflow-y: scroll; width: 90%; height: 86%;}
@@ -122,8 +139,6 @@ h2 { margin: 20px 0 10px; color: #333; font-size: 15px;}
 h2:first-child { margin-top: -5px;}
 .tbl_type1 { width: 100%; border: 1px solid #e5e5e5;}
 .tbl_type1 th { padding: 16px 0; border-bottom: 1px solid #d6d6d6; background: #eee; font-weight: normal;}
-/*.tbl_type1 th { padding: 0 9px 0 9px; height: 54px; border-bottom: 1px solid #d6d6d6; background: #eee; color: #333; vertical-align: bottom; text-align: center; font-weight: normal; line-height: 1.15;}*/
-/*.tbl_type1 th:after { display:inline-block; width:100%; content:"";}*/
 .tbl_type1 td { padding: 0 10px 0 8px; border-bottom: 1px solid #d6d6d6; background: #fff; color: #333;}
 input[type='text'], input[type='password'], input[type='time'], input[type='tel'] { width: 100%; height: 36px; border: 1px solid #e5e5e5; background: #fff; color: #999; text-indent: 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .tbl_type2 { width: 100%; border: 1px solid #dcdcdc;}
@@ -415,6 +430,11 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .menu2 ul li a.n3 { background: url(../images/ico_menu2_3.png) no-repeat 50% 0; background-size: 30px auto;}
 .menu2 ul li a.n4 { background: url(../images/ico_menu2_3.png) no-repeat 50% 0; background-size: 30px auto;}
 
+.jamList { overflow-x: hidden; overflow-y: scroll; height: 220px;}
+.jamList ul { box-sizing: border-box; width: 99%; border-top: 1px solid #dcdcdc;}
+.jamList ul li a { display: inline-block; width: 100%; height: 50px; border: solid #dcdcdc; border-width: 0 1px 1px; text-align: left; text-indent: 16px; line-height: 50px;}
+.jamList li a:active { color: #fa2828;}
+
     /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
 .pdsList:after { display: block; clear: both; content: '';}
@@ -548,7 +568,7 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .textarea0 { box-sizing: border-box; margin: 8px 0; padding: 6px; width: 100%; height: 98px; border: 1px solid #e5e5e5;}
 .textarea1 { box-sizing: border-box; padding: 6px; width: 100%; height: 98px; border: 1px solid #e5e5e5;}
 
-.photoBtnArea { width: 48%; margin: -36px auto 10px;}
+.photoBtnArea { margin: -36px auto 10px; width: 48%;}
 .photoBtnArea a { display: inline-block; width: 33px; height: 33px; text-indent: -10000px;}
 .photoBtnArea .pa1 { background: url(../images/ico_camera_c.png) no-repeat 0 0; background-size: 33px auto;}
 .photoBtnArea .pa2 { background: url(../images/ico_photo_c.png) no-repeat 0 0; background-size: 33px auto;}
