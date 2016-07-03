@@ -136,6 +136,18 @@ var chatBox = function(){
     });
 };
 
+/* 공지대상 선택*/
+var togBtn = function(){
+    $(document).on('click','.togBtn',function(e){
+        $(this).next().toggle();
+        $(this).toggleClass('off');
+
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+};
+
 $(function(){
    gnb();
 });
