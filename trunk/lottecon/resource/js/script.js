@@ -1,6 +1,5 @@
 /* gnb */
 var gnb = function(){
-
     $(document).on('click','.h_menu',function(e){
         $('.fadeWrap').fadeIn(100);
         $('.fullMenu, .fullMenu h1').animate({"left":"0"},200)
