@@ -39,7 +39,7 @@
 .depth2 .aLink2.on {  background: url(../images/ico_arr3.png) no-repeat right 17px top 50%; background-size: 15px auto;}
 .depth2 .aLink2.none { background: none;}
 .depth3 { display: none;}
-.depth3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; text-indent: 50px; line-height: 26px;}
+.depth3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; color: #262626; text-indent: 50px; line-height: 26px;}
 .fullWrap hr { margin: 0; padding: 0; height: 5px; border: solid #dbdbdb; border-width: 1px 0;}
 .fullWrap .depth2 > li:last-child hr { height: 1px; border: solid #dbdbdb; border-width: 1px 0 0;}
 .btnX { position: absolute; top: 0; right: 0; width: 55px; height: 55px; background: url(../images/full_btnX.png) no-repeat 50% 50%; background-size: 15px auto;}
