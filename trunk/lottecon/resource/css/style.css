@@ -32,14 +32,14 @@
 .fullMenu { position: fixed; top: 0; left: -80%; z-index: 1300; overflow-y: scroll; width: 80%; height: 100%; background: #fff;}
 .fullMenu h1 { position: fixed; top: 0; left: -80%; width: 80%; height: 55px; background: #bc2222; text-align: center; line-height: 55px;}
 .fullMenu h1 img { width: 113px;}
-.dep1 { margin-top: 56px;}
-.dep1 a { display: inline-block; width: 100%; font-size: 14px;}
-.dep1 .aLink1 { height: 48px; border-bottom: 1px solid #dbdbdb; color: #8f8f94; text-indent: 17px; font-size: 15px; line-height: 48px;}
-.dep2 .aLink2 { box-sizing: border-box; margin-bottom: 5px; height: 44px; background: url(../images/ico_arr1.png) no-repeat right 17px top 50%; background-size: 15px auto; color: #262626; text-indent: 27px; line-height: 50px;}
-.dep2 .aLink2.on {  background: url(../images/ico_arr3.png) no-repeat right 17px top 50%; background-size: 15px auto;}
-.dep2 .aLink2.none { background: none;}
-.dep3 { display: none;}
-.dep3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; color: #262626; text-indent: 50px; line-height: 26px;}
+.fullMenu .dep1 { margin-top: 56px;}
+.fullMenu .dep1 a { display: inline-block; width: 100%; font-size: 14px;}
+.fullMenu .dep1 .aLink1 { height: 48px; border-bottom: 1px solid #dbdbdb; color: #8f8f94; text-indent: 17px; font-size: 15px; line-height: 48px;}
+.fullMenu .dep2 .aLink2 { box-sizing: border-box; margin-bottom: 5px; height: 44px; background: url(../images/ico_arr1.png) no-repeat right 17px top 50%; background-size: 15px auto; color: #262626; text-indent: 27px; line-height: 50px;}
+.fullMenu .dep2 .aLink2.on {  background: url(../images/ico_arr3.png) no-repeat right 17px top 50%; background-size: 15px auto;}
+.fullMenu .dep2 .aLink2.none { background: none;}
+.fullMenu .dep3 { display: none;}
+.fullMenu .dep3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; color: #262626; text-indent: 50px; line-height: 26px;}
 .fullWrap hr { margin: 0; padding: 0; height: 5px; border: solid #dbdbdb; border-width: 1px 0;}
 .fullWrap .dep2 > li:last-child hr { height: 1px; border: solid #dbdbdb; border-width: 1px 0 0;}
 .btnX { position: absolute; top: 0; right: 0; width: 55px; height: 55px; background: url(../images/full_btnX.png) no-repeat 50% 50%; background-size: 15px auto;}
@@ -263,6 +263,18 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .ph em { position: absolute; top: 7px; left: 10px; z-index: 1; color: #999; font-size: 12px}
 .file { position: absolute; top: 1px; right: 0; box-sizing: border-box; width: 26%; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px;}
 .file input { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; filter: alpha(opacity=0);}
+
+.noticeTop { margin-bottom: 15px;}
+.noticeList { text-align: left;}
+.togBtn { position: absolute; top: 0; right: 0; width: 40px; height: 40px; background: url(../images/ico_minus.png) no-repeat 50% 50%; background-size: 14px auto; text-indent: -10000px;}
+.togBtn.off { background: url(../images/ico_plus.png) no-repeat 50% 50%; background-size: 14px auto;}
+.noticeList li { position: relative; padding-top: 10px;}
+.noticeList span.label { height: 28px;}
+.noticeList .depth1 { padding-left: 15px; border: 1px solid #dcdcdc;}
+.noticeList .depth2 { margin-left: -15px; padding-left: 25px; border: solid #dcdcdc; border-width: 1px 0 0;}
+.noticeList .depth3 { margin-left: -25px; padding-left: 35px; border: solid #dcdcdc; border-width: 1px 0 0;}
+.noticeList .depth4 { padding-left: 10px; width: 84%; border: solid #dcdcdc; border-width: 1px 0 0;}
+.noticeList .depth5 { padding-left: 10px;}
 
 /* 본사/현장공지 상세*/
 .noticeDetail div { box-sizing: border-box; background: #fff;}
