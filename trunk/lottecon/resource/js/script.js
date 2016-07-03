@@ -1,3 +1,24 @@
+/* gnb */
+var gnb = function(){
+
+    $(document).on('click','.h_menu',function(e){
+        $('.fadeWrap').fadeIn(100);
+        $('.fullMenu, .fullMenu h1').animate({"left":"0"},200)
+        e.preventDefault;
+        e.stopPropagation();
+    }).on('click','.btnX, .fadeWrap',function(e){
+        $('.fadeWrap').fadeOut(100);
+        $('.fullMenu, .fullMenu h1').animate({"left":"-80%"},200);
+        e.preventDefault;
+        e.stopPropagation();
+    });
+
+    $(document).on('click','.aLink2',function(){
+        $(this).not('.none').toggleClass('on');
+        $(this).not('.none').next().slideToggle(200);
+    })
+};
+
 /* radio, checkbox  span 라벨 */
 var label = function(){
     $(document).on('click','.label',function(){
@@ -115,3 +136,7 @@ var chatBox = function(){
         objBody2.scrollTop = objBody2.scrollHeight;
     });
 };
+
+$(function(){
+   gnb();
+});
