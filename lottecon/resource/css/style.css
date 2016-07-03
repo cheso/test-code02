@@ -109,7 +109,7 @@
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
 .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; border-radius: 12px; background: #fff;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
-.popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 320px;}
+.popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
 .popWrap section.md1 { width: 86%; height: 90%;}
 .popWrap section h1 { margin: 0 -20px 20px; height: 55px; border-radius: 12px 10px 0 0; background: #bc2222; color: #fff; font-size: 16px; line-height: 55px;}
 .popWrap section p { color: #777; font-size: 17px;}
@@ -431,9 +431,10 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .menu2 ul li a.n4 { background: url(../images/ico_menu2_3.png) no-repeat 50% 0; background-size: 30px auto;}
 
 .jamList { overflow-x: hidden; overflow-y: scroll; height: 220px;}
-.jamList ul { box-sizing: border-box; width: 99%; border-top: 1px solid #dcdcdc;}
-.jamList ul li a { display: inline-block; width: 100%; height: 50px; border: solid #dcdcdc; border-width: 0 1px 1px; text-align: left; text-indent: 16px; line-height: 50px;}
-.jamList li a:active { color: #fa2828;}
+.jamList ul { box-sizing: border-box; width: 99%;}
+.jamList ul li { margin-bottom: 5px;}
+.jamList ul li a { display: inline-block; width: 100%; height: 50px; border: 1px solid #dcdcdc; text-align: left; text-indent: 16px; line-height: 50px;}
+.jamList li a:active { background: #fa2828; color: #fff;}
 
     /* 자료실 */
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
