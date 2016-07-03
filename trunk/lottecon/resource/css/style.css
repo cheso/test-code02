@@ -107,11 +107,11 @@
 /* 팝업 */
 .popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
-.popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; border-radius: 12px; background: #fff;}
+.popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; background: #fff;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
 .popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
 .popWrap section.md1 { width: 86%; height: 90%;}
-.popWrap section h1 { margin: 0 -20px 20px; height: 55px; border-radius: 12px 10px 0 0; background: #bc2222; color: #fff; font-size: 16px; line-height: 55px;}
+.popWrap section h1 { margin: 0 -20px 20px; height: 55px; background: #323743; color: #fff; font-size: 16px; line-height: 55px;}
 .popWrap section p { color: #777; font-size: 17px;}
 .popWrap section .popBtnArea { margin-top: 21px;}
 .popWrap section .popBtnArea button { padding: 11px 0; width: 155px; border: 1px solid #fa2828; color: #ea2a2a; font-weight: bold; font-size: 16px;}
