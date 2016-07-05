@@ -218,6 +218,23 @@ h1.signup img { width: 163px; height: 48px;}
 
 input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 
+/* 뉴 회원가입 */
+.tbl_type3 { border-collapse: collapse; width: 100%;}
+.tbl_type3 td { height: 60px; position: relative;}
+.tbl_type3 input { width: 100%; height: 48px; margin-bottom: 8px;}
+.cgp8 col:first-child { width: 120px;}
+.img1 { width: 110px; height: 170px;}
+.tdBtn2 { position: absolute; top: 8px; right: 7px; width: 46px; height: 33px; border: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; font-size: 12px; line-height: 36px;}
+
+.photoBtnArea2 { padding-left: 8px; margin-top: -8px;}
+.photoBtnArea2 a { display: inline-block; width: 44px; height: 44px; text-indent: -10000px;}
+.photoBtnArea2 .pa1 { background: url(../images/ico_camera_c.png) no-repeat 0 0; background-size: 44px auto;}
+.photoBtnArea2 .pa2 { background: url(../images/ico_photo_c.png) no-repeat 0 0; background-size: 44px auto;}
+
+.date1 { width: 45% !important; float: left;}
+.dataDash { display: inline-block; width: 8%; height: 100%; line-height: 48px; text-align: center;}
+.date2 { width: 45% !important; float: right;}
+
 /* 현장선택 */
 .searchWrap.sideArea input[type='text'] { float: left; width: 75%;}
 .searchWrap.sideArea .sideBtn, .sideBtn  { float: right; width: 23%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
