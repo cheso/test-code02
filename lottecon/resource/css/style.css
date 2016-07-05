@@ -223,7 +223,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .tbl_type3 td { position: relative; height: 60px;}
 .tbl_type3 input { margin-bottom: 8px; width: 100%; height: 48px;}
 .cgp8 col:first-child { width: 120px;}
-.img1 { width: 110px; height: 170px;}
+.img1 img { width: 110px; height: 170px;}
 .tdBtn2 { position: absolute; top: 8px; right: 7px; width: 46px; height: 33px; border: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; font-size: 12px; line-height: 36px;}
 .lunarArea { position: absolute; top: 13px; right: 10px;}
 
