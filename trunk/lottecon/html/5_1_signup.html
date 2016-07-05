@@ -43,87 +43,90 @@
 
     <section class="content">
         <form action="">
-            <ul class="photoArea">
-                <li class="cnt"><a href="#" class="reg3"><span>사진 가져오기</span></a></li>
-            </ul>
-
-            <table class="tbl_type1">
-                <colgroup class="cgp1">
+            <table class="tbl_type3">
+                <colgroup class="cgp8">
                     <col>
                     <col>
                 </colgroup>
                 <tbody>
                 <tr>
-                    <th scope="row">아 이 디</th>
-                    <td><input type="text" name="" id=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">성 명</th>
-                    <td><input type="text" name="" id=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">비 밀 번 호</th>
-                    <td><input type="password" name="" id=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">비밀번호확인</th>
-                    <td><input type="password" name="" id=""></td>
-                </tr>
-                <tr>
-                    <th scope="row">생 년 월 일</th>
+                    <td rowspan="3">
+                        <img src="../resource/images/img_dummy2.png" alt="사진" class="img1">
+                    </td>
                     <td>
-                        <input type="text" name="" id="" class="inputSize1"> <!-- TO 개발 : size1 추가, 아래 음력 체크 추가-->
-                        <input type="checkbox" name="myArea" id="lunar">
-                        <label for="lunar"></label><span class="label">음력</span>
+                        <input type="text" name="" id="" placeholder="아이디">
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">전 화 번 호</th>
-                    <td><input type="text" name="" id=""></td>
-                </tr>
-                </tbody>
-                <tbody class="sosok">
-                <tr>
-                    <th scope="row" rowspan="4" style="line-height: 5.0;">소 속 현 장 1</th>
-                    <td class="posr">
-                        <input type="text" name="" id="" class="bdr1">
-                        <a href="#" class="tdBtn1 font_red">조회</a>
-                    </td>
-                </tr>
-                <tr> <!-- 수정 6.20 : readonly 추가 -->
-                    <td class="datePeriod posr">
-                        <input type="text" name="" id="" placeholder="시작일" class="datepicker" readonly="readonly">
-                        <span>~</span>
-                        <input type="text" name="" id="" placeholder="종료일" class="datepicker" readonly="readonly">
+                    <td>
+                        <input type="text" name="" id="" placeholder="성명">
                     </td>
                 </tr>
                 <tr>
-                    <td class="posr">
-                        <input type="text" name="" id="" class="bdr1">
-                        <a href="#" class="tdBtn1">조회</a>
+                    <td>
+                        <input type="password" name="" id="" placeholder="비밀번호">
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="tdButton btnColorA">현장추가</button></td>
-                </tr>
-                </tbody>
-                <tbody>
-                <tr>
-                    <th scope="row">파트너사명</th>
-                    <td class="posr">
-                        <input type="text" name="" id="" class="bdr1">
-                        <a href="#" class="tdBtn1 font_red">조회</a>
+                    <td>
+                        <div class="photoBtnArea2">
+                            <a href="#" class="pa1">카메라</a>
+                            <a href="#" class="pa2">사진</a>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="password" name="" id="" placeholder="비밀번호확인">
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">전문공종명</th>
-                    <td><input type="text" name="" id=""></td>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="생년월일">
+                        <div style="position: absolute; right: 10px; top: 14px;">
+                            <input type="checkbox" name="myArea" id="lunar">
+                            <label for="lunar"></label> <span class="label">음력</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="전화번호">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="현장명">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="시작일" readonly="readonly" class="datepicker date1">
+                        <span class="dataDash">~</span>
+                        <input type="text" name="" id="" placeholder="종료일" readonly="readonly" class="datepicker date2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="직책">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="button btnColorD" style="margin-bottom: 8px;">현장추가</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="파트너사명">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
                 </tr>
                 </tbody>
             </table>
 
             <div class="btnArea ea2">
-                <button type="button" class="button btnColorA">등록</button>
+                <button type="button" class="button btnColorA2">등록</button>
                 <button type="button" class="button btnColorB2">취소</button>
             </div>
 
