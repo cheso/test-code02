@@ -111,6 +111,7 @@
 .popWrap section.sm1 { width: 260px; height: 226px;}
 .popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
 .popWrap section.md1 { width: 86%; height: 90%;}
+.popWrap section.md2 { overflow-y: scroll; width: 80%; height: 80%;}
 .popWrap section h1 { margin: 0 -20px 20px; height: 55px; background: #323743; color: #fff; font-size: 16px; line-height: 55px;}
 .popWrap section p { color: #777; font-size: 17px;}
 .popWrap section .popBtnArea { margin-top: 21px;}
@@ -251,16 +252,16 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 /* 현장선택 */
 .searchWrap.sideArea input[type='text'] { float: left; width: 75%;}
 .searchWrap.sideArea .sideBtn, .sideBtn  { float: right; width: 23%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
+.sideBtn2 { float: right; width: 23%; height: 50px; border: 1px solid #fa2828; background: #fff; color: #fa2828; font-weight: bold; font-size: 16px;}
 .searchWrap input.autoSrch { background: #fff url(../images/ico_srch.png) no-repeat 13px 13px; background-size: 22px auto; text-indent: 42px !important;}
 .sideList { margin-top: 10px; border-top: 1px solid #e5e5e5; background: #fff;}
 .sideList li { height: 50px; border: solid #e5e5e5; border-width: 0 1px 1px 1px; line-height: 50px;}
 .sideList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-indent: 14px;}
 
-
 /* 본사,현장공지 */
 .searchWrap.sideArea2 select { float: left; margin-right: 2%; width: 38%; color: #999;}
 .searchWrap.sideArea2 input[type='text'] { float: left; width: 38%;}
-.searchWrap.sideArea2 .sideBtn, .sideBtn2  { float: right; width: 20%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
+.searchWrap.sideArea2 .sideBtn, .sideBtn  { float: right; width: 20%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
 
 .searchResult2 { margin-top: 17px; padding: 0 16px 0 16px; border: 1px solid #dcdcdc; background: #fff;}
 .searchResult2 section { margin-bottom: 12px; padding-top: 12px; border-top: 1px solid #dcdcdc;}
@@ -386,7 +387,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 
 /* SAFETING */
 .searchWrap.sideArea3 input[type='text'] { float: right; margin-top: 0; width: 75%;}
-.searchWrap.sideArea3 .sideBtn, .sideBtn  { float: left; width: 23%; height: 50px; border: 1px solid #fa2828; background: transparent; color: #fa2828; font-weight: bold; font-size: 16px;}
+.searchWrap.sideArea3 .sideBtn, .sideBtn  { float: left; width: 23%; height: 50px; border: 1px solid #fa2828; background: transparent; color: #fa2828; font-size: 16px;}
 
 .tableChat1 { margin-top: 10px !important; width: 100%; border-collapse: collapse; border-bottom: 1px solid #dcdcdc;}
 .tableChat1 th, .tableChat1 td { height: 50px;}
@@ -616,6 +617,11 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .photoBtnArea .pa1 { background: url(../images/ico_camera_c.png) no-repeat 0 0; background-size: 33px auto;}
 .photoBtnArea .pa2 { background: url(../images/ico_photo_c.png) no-repeat 0 0; background-size: 33px auto;}
 
+/* 조치담당자 지정 팝업 */
+.damDang { margin-top: 20px; color: #dcdcdc; text-align: left;}
+.damDang .dt { width: 100%; height: 50px; border: solid #dcdcdc; border-width: 0 1px 1px; color: #333; text-indent: 15px; font-size: 15px; line-height: 50px;}
+.damDang .dt:first-child { border-top-width: 1px;}
+.damDang .dd li a { display: inline-block; width: 100%; height: 50px; border: solid #dcdcdc; border-width: 0 1px 1px; color: #777; text-indent: 25px; line-height: 50px;}
 
 /* 잠재위험 분석 */
 .tabArea { margin: -20px -20px 20px; height: 45px; border-bottom: 1px solid #d2d2d2; background: #fff; line-height: 45px;}
