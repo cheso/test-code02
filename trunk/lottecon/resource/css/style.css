@@ -236,6 +236,18 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .dataDash { display: inline-block; width: 8%; height: 100%; text-align: center; line-height: 48px;}
 .date2 { float: right; width: 45% !important;}
 
+/* 로그인 핀입력 */
+.pin h1 { margin-top: 25px; text-align: center;}
+.pin h1 img { width: 163px; height: 48px;}
+.inputPin { margin-top: 28px; width: 100%; height: 113px; border: 1px solid #dcdcdc; background: #fff; text-align: center;}
+.inputPin p { margin: 22px 0 18px; color: #333; letter-spacing: -1px; font-size: 15px;}
+.inputPin ul { margin: auto; width: 160px;}
+.inputPin li { float: left; margin-left: 15px; width: 28px; height: 28px; border-radius: 50%; background: #999;}
+.inputPin li.on { background: #444;}
+.inputPin li:first-child { margin-left: 0;}
+.goLogin { margin: 20px -20px 0; text-align: center;}
+.goLogin a { display: inline-block; width: 100%; height: 43px; background: #5d5d5d; color: #fff; font-size: 16px; line-height: 43px;}
+
 /* 현장선택 */
 .searchWrap.sideArea input[type='text'] { float: left; width: 75%;}
 .searchWrap.sideArea .sideBtn, .sideBtn  { float: right; width: 23%; height: 50px; background: #fa2828; color: #fff; font-size: 16px;}
