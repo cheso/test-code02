@@ -665,12 +665,13 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .aTog { position: absolute; top: 0; right: 0; width: 48px; height: 48px; background: url(../images/ico_minus.png) no-repeat 50% 50%; background-size: 14px auto; text-indent: -10000px;}
 .aTog.off { background: url(../images/ico_plus.png) no-repeat 50% 50%; background-size: 14px auto;}
 
-.step { margin: auto; width: 225px; height: 31px; background: url(../images/bg_step4.png) no-repeat 0 0; background-size: 225px auto;} /* 450 310 */
-.step.step1 { background-position: 0 -31px;}
-.step.step2 { background-position: 0 -62px;}
-.step.step3 { background-position: 0 -93px;}
-.step.step4 { background-position: 0 -124px;}
-.step ul { position: fixed; left: -100000px; width: 1px; height: 1px; font-size: 1px;}
+.step { margin: auto; width: 320px; height: 42px; background: url(../images/bg_step4.png) no-repeat 0 0; background-size: 320px auto;} /* 450 310 */
+.step.step1 { background-position: 0 0;}
+.step.step2 { background-position: 0 -42px;}
+.step.step3 { background-position: 0 -84px;}
+.step.step4 { background-position: 0 -126px;}
+.step ul:after { display: block; clear: both; content: '';}
+.step ul li { float: left; color: #fff; font-size: 15px; width: 80px; text-align: center; line-height: 42px;}
 
 /* 설정 */
 .sideList2 { margin-top: 10px; border-top: 1px solid #e5e5e5; background: #fff;}
