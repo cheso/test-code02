@@ -34,16 +34,20 @@
 .fullMenu h1 { position: fixed; top: 0; left: -80%; width: 80%; height: 55px; background: #bc2222; text-align: center; line-height: 55px;}
 .fullMenu h1 img { width: 113px;}
 .fullMenu .dep1 { margin-top: 56px;}
+.fullMenu .dep1 li { margin-top: -1px;}
 .fullMenu .dep1 a { display: inline-block; width: 100%; font-size: 14px;}
-.fullMenu .dep1 .aLink1 { height: 48px; border-bottom: 1px solid #dbdbdb; color: #8f8f94; text-indent: 17px; font-size: 15px; line-height: 48px;}
+.fullMenu .dep1 .aLink1 { height: 48px; border-bottom: 1px solid #dbdbdb; background: #efeff4; color: #8f8f94; text-indent: 17px; font-size: 15px; line-height: 48px;}
 .fullMenu .dep2 .aLink2 { box-sizing: border-box; margin-bottom: 5px; height: 44px; background: url(../images/ico_arr1.png) no-repeat right 17px top 50%; background-size: 15px auto; color: #262626; text-indent: 27px; line-height: 50px;}
 .fullMenu .dep2 .aLink2.on {  background: url(../images/ico_arr3.png) no-repeat right 17px top 50%; background-size: 15px auto;}
 .fullMenu .dep2 .aLink2.none { background: none;}
 .fullMenu .dep3 { display: none;}
-.fullMenu .dep3 .aLink3 { height: 36px; background: url(../images/full_bul.png) no-repeat 34px 8px; background-size: 7px auto; color: #262626; text-indent: 50px; line-height: 26px;}
-.fullWrap hr { margin: 0; padding: 0; height: 5px; border: solid #dbdbdb; border-width: 1px 0;}
+.fullMenu .dep3 li { margin-top: 0;}
+.fullMenu .dep3 .aLink3 { height: 40px; border-top: 1px solid #efefef; background: url(../images/full_bul.png) no-repeat 34px 15px; background-size: 7px auto; color: #262626; text-indent: 50px; line-height: 40px;}
+.fullWrap hr { margin: 0; padding: 0; height: 1px; border: solid #dbdbdb; border-width: 1px 0 0;}
 .fullWrap .dep2 > li:last-child hr { height: 1px; border: solid #dbdbdb; border-width: 1px 0 0;}
 .btnX { position: absolute; top: 0; right: 0; width: 55px; height: 55px; background: url(../images/full_btnX.png) no-repeat 50% 50%; background-size: 15px auto;}
+.logout { position: relative; height: 50px;}
+.logout button { position: absolute; top: 14px; right: 14px; padding: 2px 6px; border: 1px solid #dbdbdb; color: #999; font-size: 12px;}
 
 /* MAIN */
 #main { background: #fff;}
