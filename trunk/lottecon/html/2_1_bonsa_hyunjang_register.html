@@ -29,7 +29,12 @@
                 <div class="btnArea ea2">
                     <button type="button" class="button btnColorC f_r">공지대상</button>
                 </div>
-                <textarea class="textarea2" readonly="readonly"></textarea><!-- //수정 7.6 -->
+                <div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
+				<div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
                 <div class="btnArea ea2">
                     <button type="button" class="button btnColorD f_l">카테고리</button>
                     <select name="" class="f_r">
@@ -73,47 +78,63 @@
 </div>
 
 <!-- 팝업 -->
-<div class="popWrap" style="display: none;">
+<div class="popWrap" style="display:none">
     <section class="md1">
         <h1>공지대상 선택</h1>
         <a href="#" class="btnX">닫기</a>
 
         <div class="noticeTop">
-            <input type="checkbox" name="myArea" id="x1">
-            <label for="x1"></label> <span class="label" style="margin-right: 20px;">임직원</span>
-            <input type="checkbox" name="myArea" id="y1">
-            <label for="y1"></label> <span class="label">파트너사</span>
+			<div>
+	            <input type="checkbox" name="myArea" id="x1">
+	            <label for="x1"></label> <span class="label" style="margin-right: 20px;">임직원</span>
+	            <input type="checkbox" name="myArea" id="x2">
+	            <label for="x2"></label> <span class="label">파트너사</span>
+			</div>
+			<div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x3">
+	            	<label for="x3"></label> <span class="label">현장소장</span>
+	            </div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x4">
+	            	<label for="x4"></label> <span class="label">공사팀장</span>
+	            </div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x5">
+	            	<label for="x5"></label> <span class="label">안전관리자</span>
+	            </div>
+			</div>
         </div>
 
         <div class="noticeList">
             <ul class="depth1">
                 <li>
-                    <input type="checkbox" name="myArea" id="a1_1">
+                    <input type="checkbox" name="myArea" id="a1_1" checked="checked" disabled="disabled">
                     <label for="a1_1"></label> <span class="label">롯데건설</span>
                     <a href="#" class="togBtn" style="">토글</a>
                     <ul class="depth2">
                         <li>
-                            <input type="checkbox" name="myArea" id="a2_1">
+                            <input type="checkbox" name="myArea" id="a2_1" disabled="disabled">
                             <label for="a2_1"></label> <span class="label">전략기획부문</span>
                             <ul class="depth3">
                                 <li>
-                                    <input type="checkbox" name="myArea" id="a3_1">
+                                    <input type="checkbox" name="myArea" id="a3_1" disabled="disabled">
                                     <label for="a3_1"></label> <span class="label">전략기획부문 미래혁신팀</span>
                                     <ul class="depth4">
                                         <li>
-                                            <input type="checkbox" name="myArea" id="a4_1">
+                                            <input type="checkbox" name="myArea" id="a4_1" disabled="disabled">
                                             <label for="a4_1"></label> <span class="label">정보시스템팀</span>
                                             <ul class="depth5">
                                                 <li>
-                                                    <input type="checkbox" name="myArea" id="a5_1">
+                                                    <input type="checkbox" name="myArea" id="a5_1" disabled="disabled">
                                                     <label for="a5_1"></label> <span class="label">A현장</span>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" name="myArea" id="a5_2">
+                                                    <input type="checkbox" name="myArea" id="a5_2" disabled="disabled">
                                                     <label for="a5_2"></label> <span class="label">B현장</span>
                                                 </li>
                                                 <li>
-                                                    <input type="checkbox" name="myArea" id="a5_3">
+                                                    <input type="checkbox" name="myArea" id="a5_3" disabled="disabled">
                                                     <label for="a5_3"></label> <span class="label">C현장</span>
                                                 </li>
                                             </ul><!-- //depth4-->
@@ -125,23 +146,23 @@
                     </ul><!-- //depth2-->
                     <ul class="depth2">
                         <li>
-                            <input type="checkbox" name="myArea" id="b2_1">
+                            <input type="checkbox" name="myArea" id="b2_1" disabled="disabled">
                             <label for="b2_1"></label> <span class="label">안전보건부문</span>
                             <ul class="depth3">
                                 <li>
-                                    <input type="checkbox" name="myArea" id="b3_1">
+                                    <input type="checkbox" name="myArea" id="b3_1" disabled="disabled">
                                     <label for="b3_1"></label> <span class="label">안전보건부문 안전보건팀</span>
                                     <ul class="depth4">
                                         <li>
-                                            <input type="checkbox" name="myArea" id="b4_1">
+                                            <input type="checkbox" name="myArea" id="b4_1" disabled="disabled">
                                             <label for="b4_1"></label> <span class="label">A현장</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="myArea" id="b4_2">
+                                            <input type="checkbox" name="myArea" id="b4_2" disabled="disabled">
                                             <label for="b4_2"></label> <span class="label">B현장</span>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="myArea" id="b4_3">
+                                            <input type="checkbox" name="myArea" id="b4_3" disabled="disabled">
                                             <label for="b4_3"></label> <span class="label">C현장</span>
                                         </li>
                                     </ul><!-- //depth4-->
