@@ -11,6 +11,19 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<!-- 20160712 -->
+	<script src="../resource/js/swiper.min.js"></script>
+	<script>
+	jQuery(function(){
+			var swiper = new Swiper('.emoticon', {
+			slidesPerView: 3,
+			paginationClickable: true,
+			spaceBetween: 30,
+			freeMode: true
+		});
+	})
+	</script>
+	<!-- 20160722 -->
 </head>
 
 <body>
@@ -46,7 +59,15 @@
                     6월 22일은 홍길동님의 생일입니다. 축하해주세요!
                 </p>
                 <div class="emoticon">
-                    <img src="../resource/images/ico_comu_m1.png" alt="">
+					<!-- 20160712 -->
+					<div class="emSlider swiper-wrapper">
+						<p class="swiper-slide"><img src="../resource/images/ico_comu_m1.png" alt=""></p>
+						<p class="swiper-slide"><img src="../resource/images/ico_comu_m1.png" alt=""></p>
+						<p class="swiper-slide"><img src="../resource/images/ico_comu_m1.png" alt=""></p>
+						<p class="swiper-slide"><img src="../resource/images/ico_comu_m1.png" alt=""></p>
+						<p class="swiper-slide"><img src="../resource/images/ico_comu_m1.png" alt=""></p>
+					</div>
+					<!-- 20160712 -->
                 </div>
                 <span>댓글 2</span>
             </div>
