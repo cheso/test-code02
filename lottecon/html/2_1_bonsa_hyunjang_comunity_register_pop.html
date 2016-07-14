@@ -11,6 +11,15 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<script type="text/javascript" >
+	jQuery(function(){
+		add=function(){
+			jQuery('#textview').append("<a href='" + jQuery('#urladd').val() + "' contentEditable='false' target='_blank'>" +  jQuery('#urladd').val() + "</a>");
+			jQuery('.popWrap').hide();
+		};
+	});
+    </script>
+
 </head>
 
 <body>
@@ -65,9 +74,26 @@
     </footer>
 </div>
 
-<script>
-    filebox();
-</script>
+<!-- 링크 삽입 팝업 -->
+<div class="popWrap">
+    <section class="md5">
+        <h1>링크</h1>
+        <a href="#" class="btnX">닫기</a>
+        <table class="tbl_type3">
+		<tbody>
+			<tr>
+				<td><input type="text" name="" id="" value="http://"></td>
+			</tr>
+		</tbody>
+		</table>
+        <div class="btnArea">
+			<button type="button" class="button btnColorB w45p" onclick="add()">확인</button>
+            <button type="button" class="button btnColorB2 w45p">취소</button>
+        </div>
+
+    </section>
+</div>
+<!-- // 링크 삽입 팝업 -->
 
 </body>
 </html>
