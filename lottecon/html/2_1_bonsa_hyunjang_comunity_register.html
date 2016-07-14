@@ -34,14 +34,24 @@
     <section class="content">
         <form action="">
             <div class="registerArea">
-                <div class="writeArea mt0">
-                    <input type="text" name="" id="" placeholder="제목">
-					<div class="comurlWrap sideArea">
-						<input type="text" name="" id="urladd" value="http://">
-						<button type="button" class="sideBtn" onclick="add();">추가</button>
-					</div>
-                    <div id="textview" contentEditable="true" class="textarea4"></div>
-                </div>
+
+
+				<table class="tbl_type3">
+                <tbody>
+                <tr>
+                    <td><input type="text" name="" id="" placeholder="제목"></td>
+                </tr>
+				<tr>
+                    <td>
+                        <input type="text" name="" id="urladd" value="http://">
+                        <a href="#" class="tdBtn2 red" onclick="add();">추가</a>
+                    </td>
+                </tr>
+				<tr>
+                    <td><div id="textview" contentEditable="true" class="textarea4"></div></td>
+                </tr>
+                </tbody>
+            </table>
 
                 <ul class="photoArea">
                     <li class="cnt btn1s">
