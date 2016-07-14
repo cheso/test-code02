@@ -39,3 +39,5 @@ input:read-only, input:disabled { background: #fafafa !important;}
     url(../font/NanumGothicBold.woff) format('woff'),
     url(../font/NanumGothicBold.ttf) format('truetype');
 }
+/* padding */
+.noPaddingTop {padding-top: 0 !important;}
