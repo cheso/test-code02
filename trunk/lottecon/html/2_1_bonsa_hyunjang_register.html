@@ -11,6 +11,18 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<!-- 20160712 -->
+    <script src="../resource/js/swiper.min.js"></script>
+    <script>
+    jQuery(function(){
+		var swiper = new Swiper('.emoticon', {
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			spaceBetween: 5
+		});
+    })
+    </script>
+    <!-- 20160722 -->
 </head>
 
 <body>
@@ -57,6 +69,19 @@
                         <span class="ph"><input type="text" id="lab2" readonly="readonly" title="선택 파일" /><em>파일을 첨부해 주세요</em></span>
                         <span class="file">첨부<input type="file"/></span>
                     </div>
+                </div>
+
+				<!-- Swiper -->
+                <div class="emoticon">
+                    <!-- 20160715 -->
+                    <div class="smSlider swiper-wrapper">
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></p>
+                    </div> 
+                    <!-- 20160715 -->
                 </div>
             </div>
 

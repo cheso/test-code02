@@ -335,7 +335,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .addFile { display: inline-block; overflow: hidden; width: 100%; height:  40px; background: url(../images/ico_disk.png) no-repeat 0 14px; background-size: 21px auto; color: #777; text-indent: 28px; text-overflow: ellipsis; white-space: nowrap; line-height: 48px;}
 
 /* 커뮤니티 */
-.comuDetail { box-sizing: border-box; margin-top: 10px; padding: 12px; width: 100%; height: 310px; border: 1px solid #dcdcdc; background: #fff;}
+.comuDetail { box-sizing: border-box; margin-top: 10px; padding: 12px; width: 100%; border: 1px solid #dcdcdc; background: #fff;}
 .comuDetail .top:after { display: block; clear: both; content: '';}
 .comuDetail .top .img { float: left; margin-right: 8px;}
 .comuDetail .top img { width: 40px;}
@@ -820,13 +820,13 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 
 /*swiper*/
 /*커뮤니티*/
-.comuDetail .cont { overflow-y: scroll; height: 210px;}
+.comuDetail .cont { overflow-y: scroll;}
 .comuDetail .cont p { padding-top: 4px; color: #333; font-size: 12px;}
 .comuDetail .cont .emoticon { margin: 5px 0 0 0; position:relative;width:100%; overflow:hidden; height:auto;}
 .comuDetail .cont .emoticon .emSlider {position: relative;  width: 100%;  height: 100%;  z-index: 1;  display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;}
 .comuDetail .cont .emoticon p {width:40%; float:left;}
 .comuDetail .cont .emoticon img { width: 100%;}
-.comuDetail .cont span { position: absolute; bottom: 12px; left: 12px; color: #888; font-size: 11.5px;}
+.comuDetail .cont span { bottom: 12px; left: 12px; color: #888; font-size: 11.5px;}
 
 .emoticon { margin: 5px 0 0 0; position:relative; width:100%; overflow:hidden; height:auto;}
 .emoticon .smSlider {position: relative;  width: 100%;  height: 100%;  z-index: 1;}
