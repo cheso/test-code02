@@ -11,12 +11,19 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+    <!-- 20160712 -->
+    <script src="../resource/js/swiper.min.js"></script>
 	<script type="text/javascript" >
 	jQuery(function(){
 		add=function(){
 			jQuery('#textview').append("<a href='" + jQuery('#urladd').val() + "' contentEditable='false' target='_blank'>" +  jQuery('#urladd').val() + "</a>");
 			jQuery('.popWrap').hide();
 		};
+		var swiper = new Swiper('.emoticon', {
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			spaceBetween: 5
+		});
 	});
     </script>
 
@@ -40,22 +47,44 @@
 				<table class="tbl_type3">
                 <tbody>
 					<tr>
-						<td><input type="text" name="" id="" placeholder="제목"><a href="#" class="tdBtn2 red">링크</a></td>
+						<td>
+						<div class="searchWrap sideArea">
+							<input type="text" name="" id="" placeholder="제목">
+							<button type="button" class="sideBtn">링크</button>
+						</div>
+						</td>
 					</tr>
 					<tr>
 						<td><div id="textview" contentEditable="true" class="textarea4"></div></td>
 					</tr>
                 </tbody>
 				</table>
-
-                <ul class="photoArea">
-                    <li class="cnt btn1s">
-                        <img src="../resource/images/sample_image.png" alt="">
-                        <button class="btnOnImage red"><img src="../resource/images/ico_camera.png" alt=""><span>카메라</span></button>
-                        <button class="btnOnImage orange"><img src="../resource/images/ico_photo.png" alt=""><span>이미지</span></button>
-                    </li>
-                </ul>
-            </div>
+				<div class="addArea">
+					<div class="d1">
+						<button type="button" class="add1"></button>
+						<button type="button" class="add2"></button>
+					</div>
+					<div class="d2 fileBox"> <!-- 파일첨부 마크업변경, 아래 filebox() 호출, style.css, script.js 변경 -->
+						<span class="ph"><input type="text" id="lab2" readonly="readonly" title="선택 파일" /><em>파일을 첨부해 주세요</em></span>
+						<span class="file">첨부<input type="file"/></span>
+					</div>
+				</div>
+                 <!-- Swiper -->
+                <div class="emoticon">
+                    <!-- 20160715 -->
+                    <div class="smSlider swiper-wrapper">
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></p>
+                    </div> 
+                    <!-- 20160715 -->
+                </div>
+			
+			
+			
+			</div>
 
             <div class="btnArea ea2">
                 <button type="button" class="button btnColorA">등록</button>

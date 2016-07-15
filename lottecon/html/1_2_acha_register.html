@@ -11,6 +11,9 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<!-- 20150715 -->
+	<script src="../resource/js/datepicker/script-datepicker.js"></script>
+    <script>addDatePickerLib();</script>
     <script>
         $(function() {
             $( ".datepicker" ).datepicker({
@@ -48,8 +51,11 @@
         <form action="">
             <h2>조치전 사진</h2>
             <ul class="photoArea">
-                <li><a href="#" class="reg1"><span>카메라</span></a></li>
-                <li><a href="#" class="reg2"><span>사진</span></a></li>
+                <li class="cnt btn1s">
+                    <img src="../resource/images/sample_image.png" alt="">
+                    <button class="btnOnImage red"><img src="../resource/images/ico_camera.png" alt=""><span>카메라</span></button>
+                    <button class="btnOnImage orange"><img src="../resource/images/ico_photo.png" alt=""><span>이미지</span></button>
+                </li>
             </ul>
 
             <h2>기본정보</h2>
@@ -61,7 +67,7 @@
                 <tbody>
                 <tr>
                     <th scope="row">일 시</th>
-                    <td><input type="time" name="" id=""></td>
+                    <td><input type="text" name="" id="" class="dateTimePicker"></td>
                 </tr>
                 <tr>
                     <th scope="row">장 소</th>
@@ -124,7 +130,7 @@
             </table>
 
             <h2>조치후 사진</h2>
-            <ul class="photoArea">
+            <ul class="photoArea2">
                 <li><a href="#" class="reg1"><span>카메라</span></a></li>
                 <li><a href="#" class="reg2"><span>사진</span></a></li>
             </ul>
