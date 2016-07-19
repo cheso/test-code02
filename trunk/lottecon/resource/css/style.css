@@ -34,8 +34,8 @@
 
 /* GNB */
 .fadeWrap { position: fixed; top: 0; left: 0; z-index: 1200; display: none; width: 100%; height: 100%; background: #000; opacity: 0.4;}
-.fullMenu { position: fixed; top: 0; left: -80%; z-index: 1300; overflow-y: scroll; width: 80%; height: 100%; background: #fff;}
-.fullMenu h1 { position: fixed; top: 0; left: -80%; width: 80%; height: 55px; background: #136be8; text-align: center; line-height: 55px;}
+.fullMenu { position: fixed; top: 0; left: -80%; z-index: 1300; overflow-y: scroll; width: 65%; height: 100%; background: #fff;}
+.fullMenu h1 { position: fixed; top: 0; left: -80%; width: 65%; height: 55px; background: #136be8; text-align: center; line-height: 55px;}
 .fullMenu h1 img { width: 113px;}
 .fullMenu .dep1 { margin-top: 56px;}
 .fullMenu .dep1 li { margin-top: -1px;}
@@ -59,8 +59,8 @@
 #main .wrapper > h1 { padding-top: 20%; text-align: center;}
 #main .wrapper > h1 img { width: 49%;}
 
-.facePhoto { margin: 3% auto 5%; width: 75px; height: 75px;}
-.facePhoto img { width: 100%; height: 100%; border-radius: 50%;}
+.facePhoto { margin: 3% auto 5%; width: 75px; /*height: 75px;*/}
+.facePhoto img { width: 100%; height: 100%; border-radius: 25%;}
 
 .personInfo { text-align: center;}
 .personInfo em { color: #333; font-size: 21px;}
@@ -117,7 +117,7 @@
 .popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
 .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 30px; background: #fff;}
-.popWrap section.sm { overflow-y: scroll; width: 80%;}
+.popWrap section.sm { /*overflow-y: scroll*/; width: 80%;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
 .popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
 .popWrap section.sm3 { width: 260px; height: 350px;}
@@ -216,9 +216,10 @@ input[type="checkbox"].radio:checked + label { display:inline-block; padding: 0;
 
 /* 회원가입 */
 .sosok td { padding: 8px 10px 8px 8px;}
-.tdBtn1 { position: absolute; top: 9px; right: 9px; width: 66px; height: 36px; border-left: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; line-height: 36px;}
+.tdBtn1 { position: absolute; top: 2px; right: 0px; width: 70px; height: 48px; border-left: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; line-height: 46px;}
+.tdBtn1Org { position: absolute; top: 9px; right: 9px; width: 66px; height: 36px; border-left: 1px solid #e5e5e5; background: #fff; color: #333; text-align: center; line-height: 36px;}
 .datePeriod input { width: 44.5%; text-align: center; text-indent: 0;}
-.datePeriod span { display: inline-block; width: 4%;}
+.datePeriod span { display: inline-block; width: 4.5%;}
 
 @media screen and ( max-device-width: 320px ) {
     .datePeriod input { width: 43%;}
@@ -503,7 +504,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .jamList ul li a { display: inline-block; width: 100%; height: 50px; border: 1px solid #dcdcdc; text-align: left; text-indent: 16px; line-height: 50px;}
 .jamList li a:active { background: #fa2828; color: #fff;}
 
-.damList { overflow-x: hidden; overflow-y: scroll; height: 220px;}
+.damList { overflow-x: hidden; overflow-y: scroll; height: 250px;}
 .damList ul { box-sizing: border-box; width: 99%;}
 .damList ul li { margin-bottom: 10px;}
 .damList ul li a { display: inline-block; width: 100%; height: 50px; border: 1px solid #dcdcdc; text-align: center; line-height: 50px;}
@@ -834,3 +835,6 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 .emoticon .smSlider img {width:100%;}
 .emoticon .smSlider .btnOnImage {right:0;}
 
+/* marquee Tag */
+.marqueeTag {width:100%; height:50px; border:1px solid #e5e5e5; background:#fafafa !important; color:#999; text-indent:10px; line-height:3.3; -webkit-appearance:none;}
+.marqueeTagOrg {width:100%; height:36px; border:1px solid #e5e5e5; background:#fafafa !important; color:#999; text-indent:10px; line-height:2.3; -webkit-appearance:none;}
