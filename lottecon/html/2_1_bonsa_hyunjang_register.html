@@ -35,12 +35,21 @@
         <a href="#" class="h_menu">메뉴</a>
     </header>
 
-    <section class="content mb80">
+    <section class="content">
         <form action="">
             <div class="registerArea">
-                <h2>카테고리</h2>
                 <div class="btnArea ea2">
-                    <select name="" class="f_r w100p">
+                    <button type="button" class="button btnColorC f_r">공지대상</button>
+                </div>
+                <div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
+				<div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
+                <div class="btnArea ea2">
+                    <button type="button" class="button btnColorD f_l">카테고리</button>
+                    <select name="" class="f_r">
                         <option value="">발굴</option>
                         <option value="">검토</option>
                         <option value="">조치</option>
@@ -52,10 +61,10 @@
                 </div>
 
                 <div class="addArea">
-                    <div class="photoBtnArea2 ptba2">
-						<a href="#" class="pa1">카메라</a>
-						<a href="#" class="pa2">사진</a>
-					</div>
+                    <div class="d1">
+                        <button type="button" class="add1"></button>
+                        <button type="button" class="add2"></button>
+                    </div>
                     <div class="d2 fileBox"> <!-- 파일첨부 마크업변경, 아래 filebox() 호출, style.css, script.js 변경 -->
                         <span class="ph"><input type="text" id="lab2" readonly="readonly" title="선택 파일" /><em>파일을 첨부해 주세요</em></span>
                         <span class="file">첨부<input type="file"/></span>
@@ -74,20 +83,11 @@
                     </div> 
                     <!-- 20160715 -->
                 </div>
-				
-				<div class="btnArea ea2">
-					<button type="button" class="button btnColorC f_r">공지대상</button>
-				</div>
-				<div class="registerDiv">
-					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
-				</div>
-				<div class="registerDiv">
-					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
-				</div>
             </div>
-            <div class="btnArea ea2 bottomFiexd clearfix">
+
+            <div class="btnArea ea2">
                 <button type="button" class="button btnColorA">등록</button>
-                <button type="button" class="button btnColorB">삭제</button>
+                <button type="button" class="button btnColorB2">삭제</button>
             </div>
         </form>
     </section>
