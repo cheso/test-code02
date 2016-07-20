@@ -31,9 +31,9 @@
 .font_red { color: #fa2828 !important;}
 .font_blue { color: #0158b5;}
 
-.request_1 { color: #01b583;}
-.request_2 { color: #019cb5;}
-.request_3 { color: #0158b5;}
+.request_1 { color: #fa2828;}
+.request_2 { color: #0158b5;}
+.request_3 { color: #aaa;}
 
 /* GNB */
 .fadeWrap { position: fixed; top: 0; left: 0; z-index: 1200; display: none; width: 100%; height: 100%; background: #000; opacity: 0.4;}
@@ -300,7 +300,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .searchWrap.sideArea2 select { float: left; margin-right: 2%; width: 38%; color: #999;}
 .searchWrap.sideArea2 input[type='text'] { float: left; width: 38%;}
 .searchWrap.sideArea2 .sideBtn, .sideBtn  { float: right; width: 20%; height: 40px; background: #3c8cfd; color: #fff; font-size: 16px;}
-
+.hjname {margin-bottom: 0;width: 100%;height: 40px !important; margin-bottom:5px;}
 .searchResult2 { margin-top: 10px; padding: 0 16px 0 16px; border: 1px solid #dcdcdc; background: #fff;}
 .searchResult2 section { margin-bottom: 12px; padding-top: 12px; border-top: 1px solid #dcdcdc;}
 .searchResult2 section:first-child { border-top: 0;}
@@ -632,7 +632,8 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .searchResult section { margin-bottom: 12px; padding-top: 12px; border-top: 1px solid #dcdcdc;}
 .searchResult section:first-child { border-top: 0;}
 .searchResult section:after { display: block; clear: both; content:'';}
-.searchResult section p { color: #333;}
+.searchResult section pre {color:#333;width:60%; word-wrap:break-word}
+.searchResult section p { color: #333;text-overflow: ellipsis; white-space: nowrap; width:60%; overflow:hidden;}
 .searchResult section dl { float: left;}
 .searchResult section dt { margin-bottom: 10px; color: #333; font-size: 15px;}
 .searchResult section dd { color: #707070; font-size: 14px;}
@@ -704,7 +705,7 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 .cMethod em { color: #fa2828;}
 
 /* 공정부적합사례 */
-.searchWrap .type1 li { padding-bottom: 10px;}
+.searchWrap .type1 li { padding-bottom: 5px;}
 .searchWrap .type1 select { color: #999;}
 
 /* 재해긴급 */
@@ -804,7 +805,7 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 .passField:after {display: block; content: ""; clear: both; }
 .passField li {float: left; width: 23%; box-sizing: border-box; margin-right: 2.66666666666666%; }
 .passField li:nth-child(4) {margin-right: 0; }
-.passField li>input { height: 60px; text-align: center; font-size: 68px; text-indent: 0px; border-radius: 5px; border: 1px solid #afafaf;}
+.passField li>input { height: 60px; text-align: center; font-size: 50px; text-indent: 0px; border-radius: 5px; border: 1px solid #afafaf; vertical-align:middle; line-height:1;}
 
 .wrapPassNum {width: 100%;}
 .wrapPassNum:after {display: block; content: ""; clear: both; }
@@ -852,8 +853,12 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 .comuDetail .cont p,.comuDetail .cont pre { padding-top: 4px; color: #333; font-size: 12px;}
 .comuDetail .cont .emoticon { margin: 5px 0 0 0; position:relative;width:100%; overflow:hidden; height:auto;}
 .comuDetail .cont .emoticon .emSlider {position: relative;  width: 100%;  height: 100%;  z-index: 1;  display: -webkit-box;  display: -moz-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;}
-.comuDetail .cont .emoticon p {width:40%; float:left;}
-.comuDetail .cont .emoticon img { width: 100%;}
+.noticeDetail .emoticon {margin-top:-2px;}
+.noticeDetail .emoticon > div {margin:10px;}
+.comuDetail .cont .emoticon p,
+.noticeDetail .emoticon p {width:40%; float:left;}
+.comuDetail .cont .emoticon img,
+.noticeDetail .emoticon img { width: 100%;}
 .comuDetail .cont span { bottom: 12px; left: 12px; color: #888; font-size: 11.5px;}
 
 .emoticon { margin: 0 0 0 0; position:relative; width:100%; overflow:hidden; height:auto;}
