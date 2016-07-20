@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+    <script>
+        $(function() {
+            $( ".datepicker" ).datepicker({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+                changeMonth: true,
+                changeYear: true,
+                yearSuffix: '년'
+            });
+        });
+    </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>회원가입</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content mb80">
+        <form action="">
+            <table class="tbl_type3">
+                <colgroup class="cgp8">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="3">
+                        <div class="img1">
+                            <img src="../resource/images/img_dummy3.png" alt="사진">
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="" placeholder="아이디">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="" placeholder="성명">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="" id="" placeholder="비밀번호">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="photoBtnArea2">
+                            <a href="#" class="pa1">카메라</a>
+                            <a href="#" class="pa2">사진</a>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="password" name="" id="" placeholder="비밀번호확인">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="생년월일">
+                        <div class="lunarArea">
+                            <input type="checkbox" name="myArea" id="lunar">
+                            <label for="lunar"></label> <span class="label">음력</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="전화번호">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="현장명">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="시작일" readonly="readonly" class="datepicker date1">
+                        <span class="dataDash">~</span>
+                        <input type="text" name="" id="" placeholder="종료일" readonly="readonly" class="datepicker date2">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="직책">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" class="button btnColorD">현장추가</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="" id="" placeholder="파트너사명">
+                        <a href="#" class="tdBtn2">조회</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="btnArea ea2 bottomFiexd clearfix">
+                <button type="button" class="button btnColorA">등록</button>
+                <button type="button" class="button btnColorB">취소</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<script>
+    label();
+</script>
+
+</body>
+</html>

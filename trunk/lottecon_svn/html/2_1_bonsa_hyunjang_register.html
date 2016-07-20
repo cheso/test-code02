@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+	<!-- 20160712 -->
+    <script src="../resource/js/swiper.min.js"></script>
+    <script>
+    jQuery(function(){
+		var swiper = new Swiper('.emoticon', {
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			spaceBetween: 5
+		});
+    })
+    </script>
+    <!-- 20160722 -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>글 등록</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content mb80">
+        <form action="">
+            <div class="registerArea">
+                <h2>카테고리</h2>
+                <div class="btnArea ea2">
+                    <select name="" class="f_r w100p">
+                        <option value="">발굴</option>
+                        <option value="">검토</option>
+                        <option value="">조치</option>
+                    </select>
+                </div>
+                <div class="writeArea">
+                    <input type="text" name="" id="" placeholder="제목">
+                    <textarea class="textarea4" placeholder="내용"></textarea>
+                </div>
+
+                <div class="addArea">
+                    <div class="photoBtnArea2 ptba2">
+						<a href="#" class="pa1">카메라</a>
+						<a href="#" class="pa2">사진</a>
+					</div>
+                    <div class="d2 fileBox"> <!-- 파일첨부 마크업변경, 아래 filebox() 호출, style.css, script.js 변경 -->
+                        <span class="ph"><input type="text" id="lab2" readonly="readonly" title="선택 파일" /><em>파일을 첨부해 주세요</em></span>
+                        <span class="file">첨부<input type="file"/></span>
+                    </div>
+                </div>
+
+				<!-- Swiper -->
+                <div class="emoticon">
+                    <!-- 20160715 -->
+                    <div class="smSlider swiper-wrapper">
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+                        <div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></div>
+						<div class="swiper-slide"><img src="../resource/images/sample_image.png" alt=""><button class="btnOnImage exit"><img src="../resource/images/ico_x.png" alt=""></button></p>
+                    </div> 
+                    <!-- 20160715 -->
+                </div>
+				
+				<div class="btnArea ea2">
+					<button type="button" class="button btnColorC f_r">공지대상</button>
+				</div>
+				<div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
+				<div class="registerDiv">
+					가나다라, 마바사아, 가나다라, 마바사아, 가나다라, 마바사아
+				</div>
+            </div>
+            <div class="btnArea ea2 bottomFiexd clearfix">
+                <button type="button" class="button btnColorA">등록</button>
+                <button type="button" class="button btnColorB">삭제</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- 팝업 -->
+<div class="popWrap" style="display:none">
+    <section class="md1">
+        <h1>공지대상 선택</h1>
+        <a href="#" class="btnX">닫기</a>
+
+        <div class="noticeTop">
+			<div>
+	            <input type="checkbox" name="myArea" id="x1">
+	            <label for="x1"></label> <span class="label" style="margin-right: 20px;">임직원</span>
+	            <input type="checkbox" name="myArea" id="x2">
+	            <label for="x2"></label> <span class="label">파트너사</span>
+			</div>
+			<div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x3">
+	            	<label for="x3"></label> <span class="label">현장소장</span>
+	            </div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x4">
+	            	<label for="x4"></label> <span class="label">공사팀장</span>
+	            </div>
+				<div class="dib">
+	            	<input type="checkbox" name="myArea" id="x5">
+	            	<label for="x5"></label> <span class="label">안전관리자</span>
+	            </div>
+			</div>
+        </div>
+
+        <div class="noticeList">
+            <ul class="depth1">
+                <li>
+                    <input type="checkbox" name="myArea" id="a1_1" checked="checked" disabled="disabled">
+                    <label for="a1_1"></label> <span class="label">롯데건설</span>
+                    <a href="#" class="togBtn" style="">토글</a>
+                    <ul class="depth2">
+                        <li>
+                            <input type="checkbox" name="myArea" id="a2_1" disabled="disabled">
+                            <label for="a2_1"></label> <span class="label">전략기획부문</span>
+                            <ul class="depth3">
+                                <li>
+                                    <input type="checkbox" name="myArea" id="a3_1" disabled="disabled">
+                                    <label for="a3_1"></label> <span class="label">전략기획부문 미래혁신팀</span>
+                                    <ul class="depth4">
+                                        <li>
+                                            <input type="checkbox" name="myArea" id="a4_1" disabled="disabled">
+                                            <label for="a4_1"></label> <span class="label">정보시스템팀</span>
+                                            <ul class="depth5">
+                                                <li>
+                                                    <input type="checkbox" name="myArea" id="a5_1" disabled="disabled">
+                                                    <label for="a5_1"></label> <span class="label">A현장</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="myArea" id="a5_2" disabled="disabled">
+                                                    <label for="a5_2"></label> <span class="label">B현장</span>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="myArea" id="a5_3" disabled="disabled">
+                                                    <label for="a5_3"></label> <span class="label">C현장</span>
+                                                </li>
+                                            </ul><!-- //depth4-->
+                                        </li>
+                                    </ul><!-- //depth4-->
+                                </li>
+                            </ul><!-- //depth3-->
+                        </li>
+                    </ul><!-- //depth2-->
+                    <ul class="depth2">
+                        <li>
+                            <input type="checkbox" name="myArea" id="b2_1" disabled="disabled">
+                            <label for="b2_1"></label> <span class="label">안전보건부문</span>
+                            <ul class="depth3">
+                                <li>
+                                    <input type="checkbox" name="myArea" id="b3_1" disabled="disabled">
+                                    <label for="b3_1"></label> <span class="label">안전보건부문 안전보건팀</span>
+                                    <ul class="depth4">
+                                        <li>
+                                            <input type="checkbox" name="myArea" id="b4_1" disabled="disabled">
+                                            <label for="b4_1"></label> <span class="label">A현장</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="myArea" id="b4_2" disabled="disabled">
+                                            <label for="b4_2"></label> <span class="label">B현장</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="myArea" id="b4_3" disabled="disabled">
+                                            <label for="b4_3"></label> <span class="label">C현장</span>
+                                        </li>
+                                    </ul><!-- //depth4-->
+                                </li>
+                            </ul><!-- //depth3-->
+                        </li>
+                    </ul><!-- //depth2-->
+                </li>
+            </ul><!-- //depth1-->
+        </div>
+        <div class="btnArea">
+            <button type="button" class="button btnColorA">확인</button>
+        </div>
+    </section>
+</div>
+
+<script>
+    label();
+    togBtn();
+</script>
+
+</body>
+</html>

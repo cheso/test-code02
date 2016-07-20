@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+    <script>
+        $(function() {
+            $( ".datepicker" ).datepicker({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+                changeMonth: true,
+                changeYear: true,
+                yearSuffix: '년',
+                showOn: "button",
+                buttonImage: "../resource/images/ico_cal.png",
+                buttonImageOnly: true
+            });
+        });
+    </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>재해긴급보고</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content">
+        <form action="">
+            <div class="searchWrap">
+                <ul>
+                    <li class="w100p"><input type="text" name="" placeholder="현장명 입력"></li>
+                    <li class="f_l"><input type="text" name="" readonly="readonly" class="datepicker dimg2"></li>
+                    <li class="f_r"><input type="text" name="" readonly="readonly" class="datepicker dimg2"></li>
+                    <li class="w100p"><input type="text" name="" placeholder="검색어 입력"></li>
+                </ul>
+                <div class="btnArea mt0">
+                    <button type="submit" class="button btnColorA">검색</button>
+                </div>
+            </div>
+        </form>
+        <div class="searchResult3">
+            <section>
+                <ul>
+                    <li><em>일시</em><span>2016-05-09</span></li>
+                    <li><em>장소</em><span>7층</span></li>
+                    <li><em>유형</em><span>추락</span></li>
+                </ul>
+                <div class="imgArea3">
+                    <a href="#"><img src="../resource/images/ico_push.png" alt=""></a>
+                </div>
+            </section>
+            <section>
+                <ul>
+                    <li><em>일시</em><span>2016-05-09</span></li>
+                    <li><em>장소</em><span>7층</span></li>
+                    <li><em>유형</em><span>추락</span></li>
+                </ul>
+                <div class="imgArea3">
+                    <a href="#"><img src="../resource/images/ico_push.png" alt=""></a>
+                </div>
+            </section>
+            <section>
+                <ul>
+                    <li><em>일시</em><span>2016-05-09</span></li>
+                    <li><em>장소</em><span>7층</span></li>
+                    <li><em>유형</em><span>추락</span></li>
+                </ul>
+                <div class="imgArea3">
+                    <a href="#"><img src="../resource/images/ico_push.png" alt=""></a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<script>
+    label();
+</script>
+
+</body>
+</html>
