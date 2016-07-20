@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.js"></script>
+    <script src="../resource/js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>LOTTE SAFETING</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <div class="content">
+        <div class="chatRoom">
+            <div class="top">
+                <a href="#" class="chatOut">나가기</a>
+				<span class="tdc colorA">30.5</span>
+                <p>김철수, 홍길동, 김영희, 안철수, 김김김, 이이이</p>
+				
+                <a href="#" class="userAdd">초대</a>
+            </div>
+            <div class="room" id="room">
+                <div class="you">
+                    <p class="roomP">
+                        <em>홍길동 :</em>
+                        <span class="info">
+                            <span class="s0"></span>
+                            <span class="s1">이호성 | 10층</span>
+                            <span class="s2">16/02/02</span>
+                        </span>
+                        <span class="cnt">14</span>
+                        <span class="date">16.05.01 AM 10:32</span>
+                    </p>
+                </div>
+                <div class="me">
+                    <p class="roomP">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, soluta!</span>
+                        <span class="cnt">14</span>
+                        <span class="date">16.05.01 AM 10:32</span>
+                    </p>
+                </div>
+                <div class="you">
+                    <p class="roomP">
+                        <em>홍길동 :</em>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quis.</span>
+                        <span class="cnt">14</span>
+                        <span class="date">16.05.01 AM 10:32</span>
+                    </p>
+                </div>
+                <div class="me">
+                    <p class="roomP">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, soluta!</span>
+                        <span class="cnt">14</span>
+                        <span class="date">16.05.01 AM 10:32</span>
+                    </p>
+                </div>
+                <div class="me">
+                    <p class="roomP">
+                        <span class="info">
+                            <span class="s0"></span>
+                            <span class="s1">이호성 | 10층</span>
+                            <span class="s2">16/02/02</span>
+                        </span>
+                        <span class="cnt">14</span>
+                        <span class="date">16.05.01 AM 10:32</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="inputTxt">
+                <div class="d1">
+                    <button type="button" class="cBtn1">메뉴1</button> <!-- 클릭하면 아래 나타남 -->
+                    <button type="button" class="cBtn2">메뉴2</button> <!-- 클릭하면 아래 나타남 -->
+                </div>
+                <div class="d2">
+                    <input type="text" name="" id="">
+                    <button type="button" class="commit">전송</button>
+                </div>
+            </div>
+
+            <div class="menu1" style="display: none;">
+                <ul>
+                    <li><a href="#" class="n1">촬영</a></li>
+                    <li><a href="#" class="n2">사진</a></li>
+                    <li><a href="#" class="n3">파일</a></li>
+                </ul>
+            </div>
+
+            <div class="menu2" style="display: none;">
+                <ul>
+                    <li><a href="#" class="n1">잠재사고</a></li>
+                    <li><a href="#" class="n2">아차사고</a></li>
+                    <li><a href="#" class="n3">자료실</a></li>
+                    <li><a href="#" class="n4">공지사항</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- 대화상대 추가 팝업 -->
+<div class="chatWrap" style="display: none;">
+    <section class="no1">
+        <h1>대화상대 추가</h1>
+
+        <div class="searchWrap sideArea3">
+            <input type="text" name="" id="" placeholder="검색어를 입력하세요.">
+            <button type="button" class="sideBtn">검색</button>
+        </div>
+
+        <div class="tableWrap">
+            <table class="tableChat1">
+                <colgroup class="cgp7">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th colspan="2">
+                        <input type="checkbox" name="myArea" id="a0">
+                        <label for="a0"></label> <span class="label fz14">현장A</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="myArea" id="a1">
+                        <label for="a1"></label>
+                    </td>
+                    <td>
+                        <div class="faceImg"><img src="../resource/images/img_dummy2.png" alt=""></div>
+                        <span class="s1">김필수</span>
+                        <span class="s2">(안전팀-책임)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="myArea" id="a2">
+                        <label for="a2"></label>
+                    </td>
+                    <td>
+                        <div class="faceImg"><img src="../resource/images/img_dummy2.png" alt=""></div>
+                        <span class="s1">김필수</span>
+                        <span class="s2">(안전팀-책임)</span>
+                    </td>
+                </tr>
+                </tbody>
+
+                <tbody>
+                <tr>
+                    <th colspan="2">
+                        <input type="checkbox" name="myArea" id="b0">
+                        <label for="b0"></label> <span class="label fz14">A파트너</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="myArea" id="b1">
+                        <label for="b1"></label>
+                    </td>
+                    <td>
+                        <div class="faceImg"><img src="../resource/images/img_dummy2.png" alt=""></div>
+                        <span class="s1">김필수</span>
+                        <span class="s2">(안전팀-책임)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="myArea" id="c2">
+                        <label for="c2"></label>
+                    </td>
+                    <td>
+                        <div class="faceImg"><img src="../resource/images/img_dummy2.png" alt=""></div>
+                        <span class="s1">김필수</span>
+                        <span class="s2">(안전팀-책임)</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="btnArea ea3">
+            <button type="button" class="button btnColorC">알림OFF</button>
+            <button type="button" class="button btnColorB">초대하기</button>
+            <button type="button" class="button btnColorA">나가기</button>
+        </div>
+
+    </section>
+</div>
+<!-- // 대화상대 추가 팝업 -->
+
+<!-- 잠재사고 팝업 -->
+<div class="popWrap" style="display: none;">
+    <section class="sm2">
+        <h1>잠재사고</h1>
+        <a href="#" class="btnX">닫기</a>
+        <div class="jamList">
+            <ul class="">
+                <li><a href="#">이호성 | 10층 | 16/02/02</a></li>
+                <li><a href="#">문정익 937정거장 16/02/02</a></li>
+                <li><a href="#">문정익 937정거장 16/02/02</a></li>
+                <li><a href="#">문정익 937정거장 16/02/02</a></li>
+                <li><a href="#">문정익 937정거장 16/02/02</a></li>
+                <li><a href="#">문정익 937정거장 16/02/02</a></li>
+            </ul>
+        </div>
+    </section>
+</div>
+<!-- // 잠재사고 팝업 -->
+
+<script>
+    chatBox();
+    label();
+</script>
+
+</body>
+</html>

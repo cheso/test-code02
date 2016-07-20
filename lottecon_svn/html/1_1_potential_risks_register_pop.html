@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>롯데건설 안전관리</title>
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/style.css">
+    <link rel="stylesheet" href="../resource/css/jquery-ui.css">
+    <script src="../resource/js/jquery-3.0.0.min.js"></script>
+    <script src="../resource/js/jquery-ui.min.js"></script>
+    <script src="../resource/js/script.js"></script>
+    <script>
+        $(function() {
+            $( ".datepicker" ).datepicker({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+                dayNames: ['일','월','화','수','목','금','토'],
+                dayNamesShort: ['일','월','화','수','목','금','토'],
+                dayNamesMin: ['일','월','화','수','목','금','토'],
+                showMonthAfterYear: true,
+                changeMonth: true,
+                changeYear: true,
+                yearSuffix: '년',
+                showOn: "button",
+                buttonImage: "../resource/images/ico_cal.png",
+                buttonImageOnly: true
+            });
+        });
+    </script><!-- 달력 옵션, 디자인은 변경해야 하는데 완료되면 알려드릴게요 -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="#" class="h_back">이전</a>
+        <h1>잠재위험 등록</h1>
+        <a href="#" class="h_menu">메뉴</a>
+    </header>
+
+    <section class="content">
+        <form action="">
+            <h2>조치전 사진</h2>
+
+            <div class="photoBtnArea">
+                <a href="#" class="pa1">카메라</a>
+                <a href="#" class="pa2">사진</a>
+            </div>
+            <ul class="photoArea">
+                <li class="cnt"><img src="../resource/images/img_dummy2.png" alt=""></li>
+            </ul>
+
+            <h2>기본정보</h2>
+            <table class="tbl_type1">
+                <colgroup class="cgp1">
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th scope="row">일 시</th>
+                    <td><input type="time" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">장 소</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">발 굴 자</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr><!-- //수정 6.21 : 유형추가 -->
+                    <th scope="row">유형</th>
+                    <td>
+                        <select name="" id="">
+                            <option value="">추락</option>
+                            <option value="">낙하</option>
+                            <option value="">전도</option>
+                            <option value="">붕괴</option>
+                            <option value="">충돌/협착</option>
+                            <option value="">감전</option>
+                            <option value="">기타</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">부적합내용</th>
+                    <td>
+                        <textarea class="textarea0"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">조 치 지 시</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th scope="row">조 치 기 한</th>
+                    <td class="posr"><input type="text" readonly="readonly" class="datepicker"></td>
+                </tr>
+                <tr>
+                    <th scope="row">위 험 도</th>
+                    <td class="rArea2">
+                        <input type="radio" name="myArea" id="a1" checked="checked">
+                        <label for="a1"></label> <span class="label">CA</span>
+                        <input type="radio" name="myArea" id="a2">
+                        <label for="a2"></label> <span class="label">C1</span>
+                        <hr>
+                        <input type="radio" name="myArea" id="a3">
+                        <label for="a3"></label> <span class="label">C2</span>
+                        <input type="radio" name="myArea" id="a4">
+                        <label for="a4"></label> <span class="label">C3</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">조치당담자</th>
+                    <td class="posr">
+                        <input type="text" name="" id="">
+                        <a href="#" class="srchBtn"></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2>조치후 사진</h2>
+            <ul class="photoArea">
+                <li><a href="#" class="reg1"><span>카메라</span></a></li>
+                <li><a href="#" class="reg2"><span>사진</span></a></li>
+            </ul>
+
+            <h2>조치내용</h2>
+            <textarea class="textarea1"></textarea>
+<!--
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA2">등록</button>
+            </div>
+-->
+<!--
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA">수정</button>
+                <button type="button" class="button btnColorB2">삭제</button>
+            </div>
+-->
+
+            <div class="btnArea">
+                <button type="submit" class="button btnColorA">수정</button>
+                <button type="button" class="button btnColorB">삭제</button>
+                <button type="button" class="button btnColorC">조치완료</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">메신저</a></li>
+            <li><a href="#">설정</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- 조치담당자 지정 팝업 -->
+<div class="popWrap">
+    <section class="md2">
+        <h1>조치담당자 지정</h1>
+        <a href="#" class="btnX">닫기</a>
+
+        <div class="searchWrap sideArea">
+            <input type="text" name="" id="" placeholder="검색어를 입력하세요.">
+            <button type="button" class="sideBtn2">검색</button>
+        </div>
+
+        <div class="damDang">
+            <div class="dt">현장 A</div>
+            <div class="dd">
+                <ul>
+                    <li><a href="#">김필수 (안전팀 - 책임)</a></li>
+                    <li><a href="#">김민호 (전기 - 소장)</a></li>
+                </ul>
+            </div>
+            <div class="dt">A 파트너</div>
+            <div class="dd">
+                <ul>
+                    <li><a href="#">김필수 (안전팀 - 책임)</a></li>
+                    <li><a href="#">김민호 (전기 - 소장)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- // 잠재사고 팝업 -->
+
+<script>
+    label();
+    btnCount();
+</script>
+
+</body>
+</html>
