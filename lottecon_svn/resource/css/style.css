@@ -6,6 +6,7 @@
 .mt10 { margin-top: 10px !important;}
 .mt20 { margin-top: 20px !important;}
 .mb10 {margin-bottom:10px !important;}
+.mb20 {margin-bottom:20px !important;}
 .mb80 {margin-bottom:80px !important;}
 .f_l {float:left !important}
 .f_r {float:right !important}
@@ -19,6 +20,7 @@
 .clearfix:after {display:block;visibility:hidden;clear:both;height:0;content:'';font-size:0}
 .posr { position: relative;}
 .tal { text-align: left !important; text-indent: 12px;}
+.tal2 { text-align: left !important; padding:5px 12px !important;}
 .fz14 { font-size: 15px !important;}
 
 .w100p { clear: both; width: 100% !important;}
@@ -121,7 +123,7 @@
 /* 팝업 */
 .popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
-.popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 5px; background: #fff;}
+.popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 5px; background: #fff; overflow:hidden;}
 .popWrap section.sm { overflow-y: scroll; width: 80%;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
 .popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
@@ -166,12 +168,12 @@ h2 { margin: 10px 0 5px; color: #333; font-size: 15px;}
 h2:first-child { margin-top: -5px;}
 .tbl_type1 { width: 100%; border: 1px solid #e5e5e5;}
 .tbl_type1 th { padding: 14px 0; border-bottom: 1px solid #d6d6d6; background: #eee; font-weight: normal;}
-.tbl_type1 td { padding: 0 10px 0 8px; border-bottom: 1px solid #d6d6d6; background: #fff; color: #333;}
+.tbl_type1 td { padding: 0 10px 0 8px; border-bottom: 1px solid #d6d6d6; background: #fff; color: #333;word-wrap: break-word;}
 input[type='text'], input[type='password'], input[type='time'], input[type='tel'] { width: 100%; height: 32px; border: 1px solid #e5e5e5; background: #fff; color: #999; text-indent: 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 .tbl_type2 { width: 100%; border: 1px solid #dcdcdc;}
 .tbl_type2 th { padding: 13px 0; border: solid #dcdcdc; border-width: 0 0 1px 1px; background: #eee; text-align: center; font-weight: normal;}
 .tbl_type2 th:first-child { border-left-width: 0;}
-.tbl_type2 td { padding: 16px 0; border: solid #dcdcdc; border-width: 0 0 1px 1px; background: #fff; text-align: center;}
+.tbl_type2 td { padding: 16px 0; border: solid #dcdcdc; border-width: 0 0 1px 1px; background: #fff; text-align: center; word-wrap: break-word;}
 .tbl_type2 td:first-child { border-left-width: 0;}
 .cgp1 col:first-child { width: 35%;}
 
@@ -437,7 +439,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .tableChat1 thead th { color: #333; text-align: left; text-indent: 12px;}
 .tableChat1 thead td { }
 .tableChat1 tbody { }
-.tableChat1 tbody th { padding-left: 15px; border: 1px solid #dcdcdc; background: #eee; color: #333; text-align: left;}
+.tableChat1 tbody th { padding-left: 15px; border: 1px solid #dcdcdc; background: #b9c1cc; color: #333; text-align: left;}
 .tableChat1 tbody td { border: solid #dcdcdc; border-width: 0 1px 0 0; background: #fff;}
 .tableChat1 tbody td:first-child { text-align: center;}
 .tableChat1 tbody td:first-child { border-left: 1px solid #dcdcdc;}
@@ -589,7 +591,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .buoiList dd li:after { display: block; clear: both; content: '';}
 .buoiList dd li span:nth-child(1) { float: left;}
 .buoiList dd li span:nth-child(2) { float: right;}
-.managerCall { display: block; width: 100%; height: 50px; background: #0bbdb9; color: #fff; text-align: center; font-size: 16px; line-height: 50px;}
+.managerCall { display: block; width: 100%; height: 40px; background: #0bbdb9; color: #fff; text-align: center; font-size: 16px; line-height: 40px;}
 
 /* 잠재위험 목록 */
 .searchWrap:after { display: block; clear: both; content: '';}
@@ -649,9 +651,9 @@ input[type="checkbox"]:checked + label { display:inline-block; padding: 0; width
 /* 잠재위험 등록 */
 .photoaf {height:120px !important;}
 .photoArea { width: 100%; text-align: center;}
-.photoArea li {width: 100%; height:auto; text-align: center; height:120px;}
-.photoArea li p {display:inline-block; position:relative; height:120px; overflow:hidden;}
-.photoArea li p > img { width:auto; height: 120px;}
+.photoArea li {width: 100%; height:auto; text-align: center; height:150px;}
+.photoArea li p {display:inline-block; position:relative; height:150px; overflow:hidden; min-width:10px;}
+.photoArea li p > img { width:auto; height: 150px;}
 .photoArea li a { display: inline-block; width: 100%; height: 100%; padding-bottom:20px;}
 .photoArea li a span { display: block; margin-top: 75px; color: #fff; font-size: 14px;}
 .photoArea li .reg1 { background: #0bbdb9 url(../images/ico_camera.png) no-repeat 50% 36%; background-size: 44px auto;}
