@@ -187,4 +187,11 @@ $(function(){
 		var dswlist = jQuery(this).find("img").width();
 		jQuery(this).css({"width":dswlist+"px"});
   });
+
+	/*test*/
+	jQuery(".h_back").on("click", function(){
+		history.back();
+	})
+
+
 });
