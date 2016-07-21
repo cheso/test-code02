@@ -188,10 +188,4 @@ $(function(){
 		jQuery(this).css({"width":dswlist+"px"});
   });
 
-	/*test*/
-	jQuery(".h_back").on("click", function(){
-		history.back();
-	})
-
-
 });
