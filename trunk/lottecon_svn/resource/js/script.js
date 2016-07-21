@@ -171,21 +171,12 @@ $(function(){
 		jQuery(".img1 img").css({"margin-top":rst+"px"});
    }
    
-
-   var zoom1w = jQuery(window).width(); 
-   var zoom1h = jQuery(window).height(); 
-   var zoomws = jQuery(".imgzoom img").width();
-   var zoomhs = jQuery(".imgzoom img").height();
-   if(zoomws > zoomhs){
-	    var zoomhs2 = zoom1h - 100;
-		var zoomhs3 = zoomhs2/2-10;
-		var rst = zoomhs3 - zoomhs/2;
-		jQuery(".imgzoom").css({"height":zoomhs2+"px"});
-		jQuery(".imgzoom img").css({"margin-top":rst+"px"});
-   }
-   jQuery(".emoticon .smSlider div").each(function(){
+	jQuery(".emoticon .smSlider div").each(function(){
 		var dswlist = jQuery(this).find("img").width();
 		jQuery(this).css({"width":dswlist+"px"});
-  });
-
+	});
+	/*test*/
+	jQuery(".h_back").on("click", function(){
+		history.back();
+	})
 });

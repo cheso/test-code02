@@ -18,8 +18,8 @@ a {color:#333;text-decoration:none}
 a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-weight:normal;font-style:normal}
 textarea { resize: none;}
-input:read-only, input:disabled { background: #fafafa !important;}
-
+/* input:read-only, input:disabled { background: #fafafa !important;} */
+input:read-only, input:disabled { background: #efeeee !important;}
 /* font */
 @font-face {
     font-family: 'NanumGothic';
