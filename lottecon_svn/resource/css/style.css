@@ -62,24 +62,16 @@
 #main .wrapper > h1 { padding-top: 20%; text-align: center;}
 #main .wrapper > h1 img { width: 49%;}
 
-.facePhoto { margin: 3% auto 5%; width: 75px; height: 75px;}
+
 .facePhoto img { width: 100%; height: 100%; border-radius: 50%;}
 
 .personInfo { text-align: center;}
-.personInfo em { color: #333; font-size: 21px;}
-.personInfo span { display: block; margin-top: 3px; color: #888; font-size: 13px;}
+
 
 .mainMenu { margin-top: 9%;}
 .mainMenu:after { display: block; clear: both; content: '';}
-.mainMenu li { margin-bottom: 12px; width: 48%; height: 128px; border-radius: 6px; text-align: center;}
-.mainMenu li:nth-child(1) { float: left; background: #136be8 url(../images/main_ico1.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(1):hover {background: #0e52b1 url(../images/main_ico1.png) no-repeat 50% 22px;background-size: 53px auto;}
-.mainMenu li:nth-child(2) { float: right; background: #00b7ee url(../images/main_ico2.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(2):hover { float: right; background: #039fce url(../images/main_ico2.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(3) { float: left; background: #0bbdb9 url(../images/main_ico3.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(3):hover { float: left; background: #05827f url(../images/main_ico3.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(4) { float: right; background: #a0a0a0 url(../images/main_ico4.png) no-repeat 50% 22px; background-size: 53px auto;}
-.mainMenu li:nth-child(4):hover { float: right; background: #7f7f7f url(../images/main_ico4.png) no-repeat 50% 22px; background-size: 53px auto;}
+
+
 .mainMenu li a { display: inline-block; box-sizing: border-box; padding-top: 88px; width: 100%; height: 100%; color: #fff; font-size: 17px;}
 
 @media screen and ( min-device-width: 320px ) {
