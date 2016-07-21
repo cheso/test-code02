@@ -115,7 +115,7 @@
 /* 팝업 */
 .popWrap { position: fixed; top: 0; left: 0; z-index: 1100; width: 100%; height: 100%; text-align: center;}
 .popWrap:after { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #424242; content: ''; opacity: 0.73;}
-.popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 5px; background: #fff; overflow:hidden;}
+/* .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 5px; background: #fff; overflow:hidden;} */
 .popWrap section.sm { overflow-y: scroll; width: 80%;}
 .popWrap section.sm1 { width: 260px; height: 226px;}
 .popWrap section.sm2 { overflow-y: scroll; width: 80%; height: 330px;}
@@ -235,7 +235,7 @@ input[type="checkbox"].radio:checked + label { display:inline-block; padding: 0;
 h1.signup { margin-top: 25px; text-align: center;}
 h1.signup img { width: 163px; height: 48px;}
 
-.termsArea { margin: 15px 0 19px; padding: 15px; height: 255px; border: 1px solid #e5e5e5; background: #fff;}
+.termsArea { margin: 15px 0 19px; padding: 15px; height: auto; border: 1px solid #e5e5e5; background: #fff;}
 .termsArea h1 { color: #333; font-size: 15px;}
 .termsArea .p1 { overflow-y: scroll; margin-top: 10px; padding: 10px 14px; height: 130px; border: 1px solid #d6d6d6; background: #f9f9f9; white-space: pre-line;}
 .termsArea .p2 { margin: 15px -15px 0; padding: 15px; border-top: 1px solid #e5e5e5; color: #777; text-align: center;}
@@ -893,6 +893,37 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 #main .wrapper .homePage .wrapInfo .cntInfo { width: 50%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
 #main .wrapper .homePage .mainMenu {position: absolute; width:100%; bottom: 55px;}
 
-.facePhoto { margin: 3% auto 5%; min-width: 75px; max-width: 200px; width: 40%;}
+.facePhoto { margin: 4.5% auto 5%; min-width: 75px; max-width: 200px; width: 30%;}
 .personInfo em { color: #333; font-size: 6vw;}
 .personInfo span { display: block; margin-top: 3px; color: #888; font-size: 3.5vw;}
+
+
+
+
+/* 20160720 obs work */
+.termsArea .p1 {font-size:13px;white-space:normal; line-height:1.7; height:160px;}
+.termsArea .p1 .mtemtitle {font-weight:bold; color:#097974;}
+.termsArea .p1 .temtitle {font-weight:bold; margin:6px 0 0;color:#0158b5;}
+.termsArea .p1 dt {margin-top:5px;font-weight:bold;}
+.termsArea .p1 dd {margin-left:5px;font-size:11px;}
+.termsArea .p1 dd.dule {margin-left:10px;font-size:11px;}
+.termsArea .p2 {padding-bottom:0;}
+
+/* 20160721:Nam */
+/******************************************************/
+/* original */
+/* .popWrap section { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1200; box-sizing: border-box; margin: auto; padding: 0 20px 5px; background: #fff; overflow:hidden;} */
+/* Nam modify */
+.popWrap section { position: relative; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); z-index: 1200; box-sizing: border-box; padding: 0 20px 5px; background: #fff; overflow: hidden;}
+
+section.md4 .wrapImgzoom {position: relative;}
+section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: border-box; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+
+/* calendar */
+.ui-widget-header .ui-state-hover {
+	position: absolute;
+    top: -35px;
+    width: 1.8em;
+    height: 1.8em;
+}
+/******************************************************/

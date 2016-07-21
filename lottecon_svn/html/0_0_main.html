@@ -12,32 +12,32 @@
     <script src="../resource/js/jquery-ui.js"></script>
     <script src="../resource/js/script.js"></script>
 	<script>
-        $(function(){
-            var size_w = $(window).width();
-            var size_h = $(window).height();
+        jQuery(function(){
+            var size_w = jQuery(window).width();
+            var size_h = jQuery(window).height();
 
             var reheight = function(vatext){
                 var win_h  = vatext
-                var head_h = $("header").height();
-                var foot_h = $("footer").height();
+                var head_h = jQuery("header").height();
+                var foot_h = jQuery("footer").height();
 
                 var con_h = win_h - head_h - foot_h - 1;
-                $(".homePage").css({"height":con_h+"px"})
+                jQuery(".homePage").css({"height":con_h+"px"})
 
                 /* set height for .wrapInfo & .mainMenu */
                 var wrapInfo_h = con_h*0.43;
                 var mainMenu_h = con_h*0.57;
-                $(".wrapInfo").css({"height":wrapInfo_h+"px"});
-                $(".mainMenu").css({"height":mainMenu_h+"px"});
+                jQuery(".wrapInfo").css({"height":wrapInfo_h+"px"});
+                jQuery(".mainMenu").css({"height":mainMenu_h+"px"});
 
                 /* set height for <li> */
-                var li_h = $(".mainMenu").height()*0.42;
-                $(".mainMenu li").css({"height":li_h+"px"});
+                var li_h = jQuery(".mainMenu").height()*0.42;
+                jQuery(".mainMenu li").css({"height":li_h+"px"});
 
                 /* set position for <li> */
-                var li_full_h = $(".mainMenu li").eq(0).outerHeight(true);
-                $(".mainMenu li").eq(0).css({"bottom":li_full_h+"px"});
-                $(".mainMenu li").eq(1).css({"bottom":li_full_h+"px"});
+                var li_full_h = jQuery(".mainMenu li").eq(0).outerHeight(true);
+                jQuery(".mainMenu li").eq(0).css({"bottom":li_full_h+"px"});
+                jQuery(".mainMenu li").eq(1).css({"bottom":li_full_h+"px"});
             }
 
             if(size_w > size_h){

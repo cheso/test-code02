@@ -11,6 +11,25 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<script>
+        jQuery(function(){
+            var sec_w = jQuery(".popWrap section.md3").width();
+            var sec_h = jQuery(".popWrap section.md3").height();
+            var h1_h = jQuery(".popWrap section h1").outerHeight(true);
+            var tit_h = jQuery(".pushTitle").outerHeight(true);
+            var btnArea_h = jQuery(".btnArea").outerHeight(true);
+            var outerCnt_h = jQuery(".pushContent").outerHeight(true)-jQuery(".pushContent").height();
+            
+            if (sec_w>sec_h) {
+                var cnt_h = sec_w - h1_h - tit_h - btnArea_h - outerCnt_h - 15;
+                //minus 15px becasue this form need to margin bottom 15px    
+            } else {
+                var cnt_h = sec_h - h1_h - tit_h - btnArea_h - outerCnt_h - 15;
+                //minus 15px becasue this form need to margin bottom 15px    
+            }
+            jQuery(".pushContent").css({"height":cnt_h});
+        })
+    </script>
 </head>
 
 <body>

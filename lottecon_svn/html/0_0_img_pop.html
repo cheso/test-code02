@@ -11,6 +11,27 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.min.js"></script>
     <script src="../resource/js/script.js"></script>
+	<!-- 20160721:Nam -->
+    <script>
+    jQuery(function(){
+        var win_h = jQuery(window).height();
+        var win_w = jQuery(window).width();
+        var md4_w = jQuery(".md4").outerWidth(true);
+        var md4_h = jQuery(".md4").outerHeight(true);
+        var h1_h = jQuery(".md4>h1").outerHeight(true);
+        
+        if(md4_w>md4_h){
+            var wrapImgzoom_h = md4_w - h1_h - 10;    
+            jQuery(".wrapImgzoom .imgzoom img").css({"width":"inherit"});
+
+        } else {
+            var wrapImgzoom_h = md4_h - h1_h - 10;    
+        }
+
+        jQuery(".wrapImgzoom").css({"height":wrapImgzoom_h+"px"});
+    });
+    </script>
+    <!-- 20160721:Nam:E -->
 </head>
 
 <body>
@@ -21,7 +42,9 @@
         <h1>이미지 보기</h1>
         <a href="#" class="btnX">닫기</a>
 
-        <div class="imgzoom"><img src="../resource/images/img_dummy2.png" alt="" /></div>
+         <div class="wrapImgzoom">
+            <div class="imgzoom"><img src="../resource/images/img_dummy2.png" alt="" /></div>
+        </div>
     </section>
 </div>
 <!-- // PUSH상세 팝업 -->
