@@ -11,6 +11,42 @@
     <script src="../resource/js/jquery-3.0.0.min.js"></script>
     <script src="../resource/js/jquery-ui.js"></script>
     <script src="../resource/js/script.js"></script>
+	<script>
+        $(function(){
+            var size_w = $(window).width();
+            var size_h = $(window).height();
+
+            var reheight = function(vatext){
+                var win_h  = vatext
+                var head_h = $("header").height();
+                var foot_h = $("footer").height();
+
+                var con_h = win_h - head_h - foot_h - 1;
+                $(".homePage").css({"height":con_h+"px"})
+
+                /* set height for .wrapInfo & .mainMenu */
+                var wrapInfo_h = con_h*0.43;
+                var mainMenu_h = con_h*0.57;
+                $(".wrapInfo").css({"height":wrapInfo_h+"px"});
+                $(".mainMenu").css({"height":mainMenu_h+"px"});
+
+                /* set height for <li> */
+                var li_h = $(".mainMenu").height()*0.42;
+                $(".mainMenu li").css({"height":li_h+"px"});
+
+                /* set position for <li> */
+                var li_full_h = $(".mainMenu li").eq(0).outerHeight(true);
+                $(".mainMenu li").eq(0).css({"bottom":li_full_h+"px"});
+                $(".mainMenu li").eq(1).css({"bottom":li_full_h+"px"});
+            }
+
+            if(size_w > size_h){
+                reheight(size_w);
+            }else{
+                reheight(size_h);
+            }
+        })
+    </script>
 </head>
 
 <body id="main">
@@ -23,23 +59,43 @@
         <a href="#" class="h_menu">메뉴</a>
     </header>
 
-    <h1><img src="../resource/images/main_h1.png" alt="Smart 안전관리"></h1>
+    <section class="homePage">
+        <div class="wrapInfo">
+            <div class="cntInfo">
+                <div class="facePhoto">
+                    <img src="../resource/images/img_dummy2_square.png" alt="">
+                </div>
 
-    <div class="facePhoto">
-        <img src="../resource/images/img_dummy2.png" alt="">
-    </div>
+                <div class="personInfo">
+                    <em>홍길동님</em>
+                    <span>2016.06.08 15:30</span>
+                </div>
+            </div>
+        </div>
 
-    <div class="personInfo">
-        <em>홍길동님</em>
-        <span>2016.06.08 15:30</span>
-    </div>
-
-    <ul class="mainMenu">
-        <li class="list1"><a href="#">안전</a></li>
-        <li class="list2"><a href="#">현장</a></li>
-        <li class="list3"><a href="#">정보</a></li>
-        <li class="list4"><a href="#">Safeting</a></li>
-    </ul>
+        <ul class="mainMenu">
+            <li class="list1">
+                <div class="wrapMenu">
+                    <a href="#">안전</a>
+                </div>
+            </li>
+            <li class="list2">
+                <div class="wrapMenu">
+                    <a href="#">현장</a>
+                </div>
+            </li>
+            <li class="list3">
+                <div class="wrapMenu">
+                    <a href="#">정보</a>
+                </div>
+            </li>
+            <li class="list4">
+                <div class="wrapMenu">
+                    <a href="#">Safeting</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
     <footer>
         <ul>
