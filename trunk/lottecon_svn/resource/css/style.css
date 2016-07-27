@@ -526,9 +526,9 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .pdsList { width: 100%; border: solid #dcdcdc; border-width: 0 0 0 1px;}
 .pdsList:after { display: block; clear: both; content: '';}
 .pdsList:first-child { border-top-width: 1px;}
-.pdsList li { float: left; box-sizing: border-box; width: 33.3%; width: calc(100%/3); height: 155px; border: solid #dcdcdc; border-width: 0 1px 1px 0; background: #fff;}
+.pdsList li { float: left; box-sizing: border-box; width: 33.3%; width: calc(100%/3); height: 165px; border: solid #dcdcdc; border-width: 0 1px 1px 0; background: #fff;}
 .pdsList li a { display: inline-block; width: 100%; height: 100%; color: #999; text-align: center;}
-.pdsList li img { margin: 25px 0 5px; width: 90px; height: 58px;}
+.pdsList li img { margin: 25px auto 0; width: 90px; height: auto; display:block;}
 .pdsList span { display: block; padding: 0 5px;}
 
 .pdsList2 { margin-top: 5px; padding: 0 10px; border: 1px solid #e5e5e5; background: #fff;}
