@@ -928,3 +928,12 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
     height: 1.8em;
 }
 /******************************************************/
+
+
+/* 20160727:Nam */
+.bottomFiexd.camPhoBtn > li:nth-child(1){width: auto;}
+.bottomFiexd.camPhoBtn .pa1, .bottomFiexd.camPhoBtn .pa2 {width: 44px; height: 40px;}
+.bottomFiexd.camPhoBtn .chooseImg {position: absolute; bottom: 100%; right: 20px; border: 1px solid #ccc;}
+.bottomFiexd.camPhoBtn .chooseImg img { width: 155px; display: block; margin: auto;}
+.bottomFiexd.camPhoBtn .wrapInputFixed { width: calc(98% - 96px); float: right;}
+.bottomFiexd.camPhoBtn .wrapInputFixed .inputComment:after {content:"입력해 주세요";}
