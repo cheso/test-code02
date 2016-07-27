@@ -369,10 +369,11 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .comuDatgul2 .clearfix { position: relative; padding: 4px 0; border-top: 1px solid #dcdcdc;}
 .comuDatgul2 .clearfix:after { display: block; clear: both; content: '';}
 .comuDatgul2 .clearfix:first-child { border-top: 0;}
-.comuDatgul2 .clearfix .c1 { float: left; padding: 11px 0; width: 70%;}
+.comuDatgul2 .clearfix .c1 { float: left; padding: 11px 0; width: 66%;}
 .comuDatgul2 .clearfix .c1 .s1 { color: #999; font-size: 15px;}
 .comuDatgul2 .clearfix .c1 .s2 { color: #999; font-size: 15px;}
 .comuDatgul2 .clearfix .c1 .s3 { display: block; margin-top: 4px; width: 100%; color: #333; font-size: 15px;}
+.comuDatgul2 .clearfix .c1 .s3 p img {width:100%;}
 .comuDatgul2 .clearfix .c1 .s3 input { width: 48px; border: 0; vertical-align: baseline; font-weight: bold;}
 .comuDatgul2 .clearfix .c2 { position: absolute; right: 0; bottom: 23px; float: right;}
 .comuDatgul2 .clearfix .c2 button { padding-bottom: 2px; width: 45px; height: 31px; font-size: 12px;}
