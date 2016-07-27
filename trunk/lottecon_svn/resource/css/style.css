@@ -935,6 +935,7 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 /* 20160727:Nam */
 .bottomFiexd.camPhoBtn > li:nth-child(1){width: auto;}
 .wrapTextareaBtn {position: relative;}
+.wrapTextareaBtn .textarea4 { overflow: auto; padding-bottom: 50px; box-sizing: border-box;}
 .editPage { background: #f1f1f1; width: calc(100% - 2px); position: absolute; left: 1px; bottom: 0; padding: 5px; box-sizing: border-box;}
 .editPage .pa1, .editPage .pa2 {width: 40px; height: 35px; background-size: 40px auto;}
 .editPage .ptba2 {margin-top: 0;}
