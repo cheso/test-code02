@@ -574,7 +574,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .bottomFiexd input { width: 48px; border: 0; vertical-align: baseline; font-weight: bold;}
 .bottomFiexd .sideBtn { width: 100%; height: 35px; background: #3c8cfd; color: #fff; font-size: 16px;}
 .bottomFiexd .inputComment { position: relative; overflow-y: scroll; box-sizing: border-box; padding: 5px 0 0 10px; width: 100%; height: 35px; border: 1px solid #e5e5e5; background: #fff; color: #999;}
-.bottomFiexd .inputComment:after { position: absolute; top: 16%; left: 10px; content:'댓글을 입력해 주세요.';}
+.bottomFiexd .inputComment:after { position: absolute; top: 16%; left: 10px; content:'입력해 주세요.';}
 .bottomFiexd .inputComment.clear:after { display: none;}
 
 /* 부외자산 조회 */
