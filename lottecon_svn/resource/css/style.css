@@ -928,7 +928,7 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .bottomFiexd.camPhoBtn .chooseImg {position: absolute; bottom: 100%; right: 20px; border: 1px solid #ccc;}
 .bottomFiexd.camPhoBtn .chooseImg>img { width: 155px; display: block; margin: auto;}
 .bottomFiexd.camPhoBtn .chooseImg .btnOnImage {width: 40px;}
-.bottomFiexd.camPhoBtn .photoBtnArea2 {padding-top: 5px;}
+.bottomFiexd.camPhoBtn .photoBtnArea2 {padding-top: 4px;}
 .bottomFiexd.camPhoBtn .photoBtnArea2>button { height: 35px; width: 40px; background-size: 40px auto;}
 .bottomFiexd.camPhoBtn .wrapInputFixed { float: right; width: calc(98% - 86px);}
 .wrapTextareaBtn {position: relative;}
