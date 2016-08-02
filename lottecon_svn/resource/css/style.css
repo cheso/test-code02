@@ -943,7 +943,7 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .btnOnImage.green{background: rgba(62,221,198,0.78);}
 
 .photoArea.risksReg li.cnt {height: auto;}
-.photoArea.risksReg li.cnt > p {height: initial; width: 50%;}
+.photoArea.risksReg li.cnt > p {height: initial; width: 80%;}
 .photoArea.risksReg li.cnt > p > img { width: 100%; height: auto; display: block;}
 .photoArea.risksReg .btnOnImage { width: 40px; height: 40px; border-top-left-radius: 6px; border-top-right-radius: 6px;}
 .photoArea.risksReg .btnOnImage img {width: 24px;}
