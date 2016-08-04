@@ -148,7 +148,7 @@ var togBtn = function(){
 
 };
 
-/* show & hide button after each 3s  */
+/* show & hide button after each 3s  
 setInterval(function(){
     if(jQuery(".photoArea .cnt").hasClass("btn1s")==true){
         jQuery(".photoArea .cnt").removeClass("btn1s");
@@ -158,7 +158,7 @@ setInterval(function(){
         jQuery(".photoArea .cnt").addClass("btn1s");
     }
 },3000);
-
+*/
 $(function(){
    gnb();
    var img1w = jQuery(".img1").width(); 
