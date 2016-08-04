@@ -955,5 +955,6 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .photoArea.risksReg .btnOnImage.blue {right: 45px;}
 
 /* 20160803 */
-.tGuide {background:#d6dfec;border-radius:5px; position:absolute; bottom:0; width:80%; text-align:center; color:#0e50ae; margin-left:10%; padding:3px; font-size:90%;}
-.tGuide img {position:absolute; margin:-10px auto 0; left:45.3%;}
+.tGbox {text-align:center; margin:auto; bottom:0; position:absolute; text-align:center;background:#d6dfec;border-radius:5px;  color:#0e50ae; padding:7px 0; font-size:90%; line-height:1; width:80%; display:block; left:10%;}
+.tGuide {display:block;margin:auto; white-space:nowrap; width:90%; text-overflow: ellipsis; overflow:hidden; }
+.tGbox img {position:absolute; margin:-15px auto 0; left:45.3%; }
