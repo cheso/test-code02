@@ -392,6 +392,7 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .comurlWrap input[type="text"] { float: left; width: 75%;} 
 .comurlWrap.sideArea .sideBtn, .sideBtn  { float: right; width: 23%; height: 47px; background: #fa2828; color: #fff; font-size: 16px;}
 .sidelinkBtn  { float: right; width: 45px; height: 40px; background:#3c8cfd url(../images/link_.png) no-repeat center center;background-size:50%; color: #fff; text-indent:-999999px; border-radius:0 0 0 10px;}
+.sidelinkBtn.comRes {position: absolute; right: 0;}
 .comurlWrap:after { display: block; clear: both; content: '';}
 
 #textview { background:#fff;border:1px solid #e5e5e5;}
