@@ -12,10 +12,16 @@
     <script src="../resource/js/jquery-ui.js"></script>
     <script src="../resource/js/script.js"></script>
 	<script>
-        jQuery(function(){
-            var size_w = jQuery(window).width();
-            var size_h = jQuery(window).height();
+        var size_w = jQuery(window).width();
+        var size_h = jQuery(window).height();
 
+        jQuery(function(){
+            fnSetScreenHeight();
+            fnSetBackgroundSize();
+        })
+
+        /* check and set height for screen */
+        function fnSetScreenHeight(){
             var reheight = function(vatext){
                 var win_h  = vatext
                 var head_h = jQuery("header").height();
@@ -45,7 +51,14 @@
             }else{
                 reheight(size_h);
             }
-        })
+        }
+
+        /* set background size for 4 big icons */
+        function fnSetBackgroundSize(){
+            var wrap_h = $(".wrapMenu").outerHeight(true);
+            $(".wrapMenu").css({"background-size":wrap_h-30});
+
+        }
     </script>
 </head>
 
@@ -80,22 +93,22 @@
         <ul class="mainMenu">
             <li class="list1">
                 <div class="wrapMenu">
-                    <a href="#">안전</a>
+                    <!-- <a href="#">안전</a> -->
                 </div>
             </li>
             <li class="list2">
                 <div class="wrapMenu">
-                    <a href="#">현장</a>
+                    <!-- <a href="#">현장</a> -->
                 </div>
             </li>
             <li class="list3">
                 <div class="wrapMenu">
-                    <a href="#">정보</a>
+                    <!-- <a href="#">정보</a> -->
                 </div>
             </li>
             <li class="list4">
                 <div class="wrapMenu">
-                    <a href="#">Safeting</a>
+                    <!-- <a href="#">Safeting</a> -->
                 </div>
             </li>
         </ul>
