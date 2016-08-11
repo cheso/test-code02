@@ -962,6 +962,7 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .tGbox img {position:absolute; margin:-15px auto 0; left:45.3%; }
 
 @media (min-width: 700px) {
+	.mainMenu li {height: 228px;}
 	.personInfo em { font-size: 190%;}
 	.personInfo span { margin-top: 3px; font-size: 105%;}
 	.tGbox {font-size:20px;}
