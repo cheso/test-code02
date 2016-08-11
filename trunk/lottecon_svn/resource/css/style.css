@@ -885,22 +885,22 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_menu2.png)
 .mainMenu li:nth-child(4) { float: right; bottom: 0; right: 0;}
 
 .mainMenu li .wrapMenu {border-radius: 6px;}
-.mainMenu li:nth-child(1) .wrapMenu {background: #136be8 url(../images/main_ico1.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(1) .wrapMenu:hover{background: #0e52b1 url(../images/main_ico1.png) no-repeat 50% 50%;background-size: 60% auto;}
-.mainMenu li:nth-child(2) .wrapMenu {background: #00b7ee url(../images/main_ico2.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(2) .wrapMenu:hover{background: #039fce url(../images/main_ico2.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(3) .wrapMenu {background: #0bbdb9 url(../images/main_ico3.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(3) .wrapMenu:hover{background: #05827f url(../images/main_ico3.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(4) .wrapMenu {background: #a0a0a0 url(../images/main_ico4.png) no-repeat 50% 50%; background-size: 60% auto;}
-.mainMenu li:nth-child(4) .wrapMenu:hover{background: #7f7f7f url(../images/main_ico4.png) no-repeat 50% 50%; background-size: 60% auto;}
+.mainMenu li:nth-child(1) .wrapMenu {background: #136be8 url(../images/main_ico1.png) no-repeat 50% 50%; background-size:auto 70% ;}
+.mainMenu li:nth-child(1) .wrapMenu:hover{background: #0e52b1 url(../images/main_ico1.png) no-repeat 50% 50%;background-size: auto 70% ;}
+.mainMenu li:nth-child(2) .wrapMenu {background: #00b7ee url(../images/main_ico2.png) no-repeat 50% 50%; background-size: auto 70% ;}
+.mainMenu li:nth-child(2) .wrapMenu:hover{background: #039fce url(../images/main_ico2.png) no-repeat 50% 50%; background-size: auto 70% ;}
+.mainMenu li:nth-child(3) .wrapMenu {background: #0bbdb9 url(../images/main_ico3.png) no-repeat 50% 50%; background-size: auto 70% ;}
+.mainMenu li:nth-child(3) .wrapMenu:hover{background: #05827f url(../images/main_ico3.png) no-repeat 50% 50%; background-size: auto 70% ;}
+.mainMenu li:nth-child(4) .wrapMenu {background: #a0a0a0 url(../images/main_ico4.png) no-repeat 50% 50%; background-size: auto 70% ;}
+.mainMenu li:nth-child(4) .wrapMenu:hover{background: #7f7f7f url(../images/main_ico4.png) no-repeat 50% 50%; background-size: auto 70% ;}
 /* 20160720:E */
 #main .wrapper .homePage {padding-top: 50px; padding-bottom: 55px;}
 #main .wrapper .homePage > h1 { text-align: center;}
 #main .wrapper .homePage > h1 img { width: 49%;}
 #main .wrapper .homePage .mainMenu li .wrapMenu{position: relative; width: 100%; height: 100%;}
 #main .wrapper .homePage .mainMenu li a { position: absolute; left: 50%; top: 67%; -webkit-transform: translate(-50%,0); width: auto; height: auto; padding-top: 0; font-size: 4vw;}
-#main .wrapper .homePage {position: relative; height:380px;}
-#main .wrapper .homePage .wrapInfo {position: absolute; width:100%; min-height:210px;}
+#main .wrapper .homePage {position: relative; height:70%;}
+#main .wrapper .homePage .wrapInfo {position: absolute; width:100%; min-height:35%;}
 #main .wrapper .homePage .wrapInfo .cntInfo { width: 50%; position: absolute; top: 46%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
 #main .wrapper .homePage .mainMenu {position: absolute; width:100%; bottom: 55px;}
 
@@ -956,6 +956,13 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .photoArea.risksReg .btnOnImage.blue {right: 45px;}
 
 /* 20160803 */
-.tGbox {text-align:center; margin:auto; bottom:0; position:absolute; text-align:center;background:#d6dfec;border-radius:5px;  color:#0e50ae; padding:7px 0; font-size:90%; line-height:1; width:80%; display:block; left:10%;}
-.tGuide {display:block;margin:auto; white-space:nowrap; width:90%; text-overflow: ellipsis; overflow:hidden; }
+.tGbox {text-align:center; margin:auto; bottom:0; position:absolute; text-align:center;background:#d6dfec;border-radius:5% 5%;  color:#0e50ae; padding:2% 0; line-height:1; width:80%; display:block; left:10%; font-size:15px;}
+.tGuide {display:block;margin:auto; white-space:nowrap; width:90%; text-overflow: ellipsis; overflow:hidden;  font-size:100%;}
 .tGbox img {position:absolute; margin:-15px auto 0; left:45.3%; }
+
+@media (min-width: 700px) {
+	.personInfo em { font-size: 190%;}
+	.personInfo span { margin-top: 3px; font-size: 105%;}
+	.tGbox {font-size:20px;}
+	.tGbox img {position:absolute; margin:-23px auto 0; left:45.3%;  left:47.3%; }
+}
