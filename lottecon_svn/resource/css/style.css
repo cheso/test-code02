@@ -64,7 +64,7 @@
 #main .wrapper > h1 img { width: 49%;}
 
 
-.facePhoto img { width: 100%; height: 100%; border-radius: 50%;}
+.facePhoto img { width: 100%; height: auto; border-radius: 50%;}
 
 .personInfo { text-align: center;}
 
