@@ -455,10 +455,10 @@ input.inputSize1 { width: 64%; width: calc(100% - 58px);}
 .chatRoom .top a { position: absolute; top: 0; width: 45px; height: 45px; text-indent: -10000px;}
 .chatRoom .top a.chatOut { left: 0; background: url(../images/ico_out.png) no-repeat 50% 50%; background-size: 25px auto;}
 .chatRoom .top a.userAdd { right: 0; background: url(../images/ico_user_add.png) no-repeat 50% 50%; background-size: 25px auto;}
-.chatRoom .top p { overflow: hidden; margin: auto; height: 100%; text-align: center; text-overflow: ellipsis; white-space: nowrap; line-height: 45px; display:inline-block;vertical-align:middle;}
+.chatRoom .top p {font-size: 18px; overflow: hidden; margin: auto; height: 100%; text-align: center; text-overflow: ellipsis; white-space: nowrap; line-height: 41px; display: inline-block; vertical-align: middle;}
 @media (min-width: 320px){.chatRoom .top p {width: 160px;}}
 @media (min-width: 480px){.chatRoom .top p {width: auto;}}
-.chatRoom .top span {display:inline-block; vertical-align:middle;  font-size:12px !important; width:48px; height:35px; line-height:35px;}
+.chatRoom .top span {display: inline-block; vertical-align: middle; font-size: 12px !important; width: 43px; height: 23px; line-height: 23px;}
 
 .room { overflow-y: scroll; margin-top: 10px; padding: 8px 24px 23px; /*height: 345px; */border: 1px solid #dcdcdc; background: #fff;}
 .room .roomP { position: relative; margin: 15px 0; padding: 14px; border-radius: 6px; color: #333; font-size: 14px;}
