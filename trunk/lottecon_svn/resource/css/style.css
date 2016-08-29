@@ -779,7 +779,7 @@ input[type="checkbox"].pin:checked + label { display:inline-block; background: u
 
 /* FOOTER */
 footer { position: fixed; bottom: 0; left: 0; z-index: 1000; width: 100%; height: 55px; border-top: 1px solid #dcdcdc; background: #fff;}
-footer ul { padding: 0 20px; height: 100%;}
+footer ul { height: 100%;}
 footer ul:after { display: block; clear: both; content: '';}
 footer ul li { float: left; width: 20%; height: 100%;}
 footer ul li a { display: inline-block; width: 100%; height: 100%; text-align: center; font-size: 9px; line-height: 84px;}
