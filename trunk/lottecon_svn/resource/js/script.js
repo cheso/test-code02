@@ -148,6 +148,20 @@ var togBtn = function(){
 
 };
 
+/* SMS form */
+function fnIncrDecsSMS(){
+    $(document.body).on("click",".wrapSMSSec .plusBtn",function(){
+        var curVal = parseInt($(this).parent().find("input").val());
+        $(this).parent().find("input").val(curVal+1);
+    });
+    $(document.body).on("click",".wrapSMSSec .minusBtn",function(){
+        var curVal = parseInt($(this).parent().find("input").val());
+        if (curVal>1){
+            $(this).parent().find("input").val(curVal-1);    
+        }
+    });
+}
+
 /* show & hide button after each 3s  
 setInterval(function(){
     if(jQuery(".photoArea .cnt").hasClass("btn1s")==true){
@@ -184,4 +198,5 @@ $(function(){
 	jQuery(".h_back").on("click", function(){
 		history.back();
 	})
+
 });
