@@ -977,9 +977,7 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 
 /* 20160829 */
 .wrapSMSSec {height: 40px; margin-top: 15px;}
-.wrapSMSSec input {width: 20%; height: 40px; background: #fff; text-align: center; text-indent: initial; box-sizing: border-box; border-radius: 4px; border: 1px solid #cccccc; font-size: 16px;}
+.wrapSMSSec input {width: 20%; height: 40px; background: #fff; text-align: center; text-indent: initial; box-sizing: border-box; border-radius: 4px; border: 1px solid #cccccc; font-size: 16px; margin: 0 3px;}
 .wrapSMSSec button {border-radius: 4px; height: 40px; border: 1px solid #cccccc; background: #eaeaea; box-sizing: border-box; width: 40px;}
 .wrapSMSSec button img {display: block; margin: auto; width: 18px;}
-.wrapSMSSec .plusBtn {}
-.wrapSMSSec .minusBtn {}
 .wrapSMSSec .sendBtn {background: #0bbdb9; color: #fff; border-radius: 0; width: 30%; float: right; font-weight: bold; border: 0;}
