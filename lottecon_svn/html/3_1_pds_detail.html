@@ -76,15 +76,16 @@
                 </div>
             </div>
         </div>
-
-        <ul class="bottomFiexd clearfix btn1sec">
+    </section>
+    
+    <section>
+        <ul class="bottomFiexd clearfix btn1sec inpBotFixed">
             <li>
                 <div contenteditable class="inputComment"></div> <!-- 아래에 스크립트도 추가했어요 -->
             </li>
             <li><button type="submit" class="sideBtn">보내기</button></li>
         </ul>
     </section>
-
     <footer>
        <ul>
             <li><a href="#">홈</a></li>
@@ -100,6 +101,7 @@
     $('.inputComment').focus(function(){
         $(this).addClass('clear');
     });
+    fnIOSInputFocus();
 </script>
 
 </body>
