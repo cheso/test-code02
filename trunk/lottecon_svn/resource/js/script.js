@@ -149,7 +149,7 @@ var togBtn = function(){
 };
 
 /* SMS form */
-function fnIncrDecsSMS(){
+var fnIncrDecsSMS = function(){
     $(document.body).on("click",".wrapSMSSec .plusBtn",function(){
         var curVal = parseInt($(this).parent().find("input").val());
         $(this).parent().find("input").val(curVal+1);
@@ -161,6 +161,25 @@ function fnIncrDecsSMS(){
         }
     });
 }
+
+/* Fixed bug: while focusing on input fixed bottom field, the footer and this input run to another position */
+var curScrollTop = "";
+var fnIOSInputFocus = function(){
+    $(".inputComment").click(function(e){
+        curScrollTop = $(window).scrollTop();
+        $(window).scrollTop($(document).height() - $(window).height())
+        $("header").addClass("relative");
+        $("footer,.inpBotFixed").addClass("iOSInputFocus");
+        $(".content").addClass("mb-101");
+    });
+    $(".inputComment").blur(function(){
+        $(window).scrollTop(curScrollTop);
+        $("header").removeClass("relative");
+        $("footer,.inpBotFixed").removeClass("iOSInputFocus");
+        $(".content").removeClass("mb-101");
+    });
+}
+
 
 /* show & hide button after each 3s  
 setInterval(function(){

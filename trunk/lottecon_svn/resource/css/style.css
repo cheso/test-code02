@@ -1,16 +1,6 @@
 @charset "utf-8";
 
 /* base */
-.mt0 { margin-top: 0 !important;}
-.mt5 { margin-top: 5px !important;}
-.mt10 { margin-top: 10px !important;}
-.mt20 { margin-top: 20px !important;}
-.mb10 {margin-bottom:10px !important;}
-.mb20 {margin-bottom:20px !important;}
-.mb80 {margin-bottom:80px !important;}
-.f_l {float:left !important;}
-.f_r {float:right !important;}
-.f_n { float:none !important;}
 .cl_b {clear:both;width:0;height:0;font-size:0;line-height:0;}
 .show {display:block;}
 .dib {display:inline-block;}
@@ -23,6 +13,14 @@
 .tal2 { text-align: left !important; padding:5px 12px !important;}
 .fz14 { font-size: 15px !important;}
 
+/* position */
+.f_l {float:left !important;}
+.f_r {float:right !important;}
+.f_n { float:none !important;}
+.relative {position: relative !important;}
+
+
+/* width */
 .w100p { clear: both; width: 100% !important;}
 .w75p { width: 75% !important;}
 .w50p { width: 50% !important;}
@@ -35,6 +33,29 @@
 .request_1 { color: #fa2828;}
 .request_2 { color: #0158b5;}
 .request_3 { color: #aaa;}
+
+/* padding */
+.noPaddingTop {padding-top: 0 !important;}
+
+/* margin */
+.mt0 { margin-top: 0 !important;}
+.mt5 { margin-top: 5px !important;}
+.mt10 { margin-top: 10px !important;}
+.mt20 { margin-top: 20px !important;}
+
+.mb10 {margin-bottom:10px !important;}
+.mb20 {margin-bottom:20px !important;}
+.mb80 {margin-bottom:80px !important;}
+.mb-101 {margin-bottom: -101px !important;}
+
+/* color */
+.bgGrey { background: #626262 !important; }
+.bgLightGrey {background: #e4e5e8 !important;}
+.borderGrey { border-color: #626262 !important; }
+
+/* border */
+.borderRadius5 {border-radius: 5px;}
+
 
 /* GNB */
 .fadeWrap { position: fixed; top: 0; left: 0; z-index: 1200; display: none; width: 100%; height: 100%; background: #000; opacity: 0.4;}
@@ -797,19 +818,6 @@ footer ul li:nth-of-type(4) a:active { background: url(../images/foot_msg2.png) 
 footer ul li:nth-of-type(5) a:active { background: url(../images/foot_menu2.png) no-repeat 50% 10px; background-size: 23px auto;}
 
 /* 20160712 */
-
-/* color */
-.bgGrey { background: #626262 !important; }
-.bgLightGrey {background: #e4e5e8 !important;}
-.borderGrey { border-color: #626262 !important; }
-
-/* margin */
-.noMarginTop {margin-top: 0 !important;}
-
-/* border */
-.borderRadius5 {border-radius: 5px;}
-
-
 .passField {width: 100%;margin-bottom: 30px; margin-top: 12px;}
 .passField:after {display: block; content: ""; clear: both; }
 .passField li {float: left; width: 23%; box-sizing: border-box; margin-right: 2.66666666666666%; }
@@ -930,12 +938,7 @@ section.md4 .wrapImgzoom {position: relative;}
 section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: border-box; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
 
 /* calendar */
-.ui-widget-header .ui-state-hover {
-	position: absolute;
-    top: -35px;
-    width: 1.8em;
-    height: 1.8em;
-}
+.ui-widget-header .ui-state-hover {position: absolute; top: -35px; width: 1.8em; height: 1.8em; }
 
 /* 20160727 */
 .bottomFiexd.camPhoBtn > li:nth-child(1){width: auto;}
@@ -981,3 +984,6 @@ section.md4 .wrapImgzoom .imgzoom {position: absolute; width: 100%; box-sizing: 
 .wrapSMSSec button {border-radius: 4px; height: 40px; border: 1px solid #cccccc; background: #eaeaea; box-sizing: border-box; width: 40px;}
 .wrapSMSSec button img {display: block; margin: auto; width: 18px;}
 .wrapSMSSec .sendBtn {background: #0bbdb9; color: #fff; border-radius: 0; width: 30%; float: right; font-weight: bold; border: 0;}
+
+/* 20160902 */
+.iOSInputFocus {position: relative; bottom: 0;}
